@@ -17,7 +17,7 @@ export default function LearnMore() {
           {/* Left side content */}
           <div className="flex flex-col w-full px-4 md:w-6/12 lg:w-5/12 xl:w-4/12">
             <p className="mb-1 text-2xl font-semibold leading-normal md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
-              What is InspireHub?
+              What is DonorHub?
             </p>
             <p className="mb-6 font-roboto text-base text-[#121212] md:text-lg lg:text-xl">
               DonorHub is a pivotal system designed to streamline the blood
@@ -74,7 +74,7 @@ export default function LearnMore() {
           <div className="w-full px-4 mt-16 md:w-1/2">
             <img
               className="w-full h-auto mx-auto max-md:max-w-md md:w-5/6 md:h-5/6" // Adjust image size here
-              src="src/assets/Website-Creator.png" // Update the path accordingly
+              src="src/assets/Blood donation-.png"
               alt="Project Creator"
             />
           </div>
