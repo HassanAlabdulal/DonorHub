@@ -20,26 +20,32 @@ export default function LearnMore() {
               What is InspireHub?
             </p>
             <p className="mb-6 font-roboto text-base text-[#121212] md:text-lg lg:text-xl">
-              InspireHub is not just a platform; it's a community pulsating with
-              innovative ideas, where students and creative minds bring their
-              visions to life. It's a space where your projects leap off the
-              screen and into the world, where feedback becomes the forge for
-              excellence, and where AI meets human ingenuity to spark new ideas.
+              DonorHub is a pivotal system designed to streamline the blood
+              donation process. It serves as a vital link between donors,
+              recipients, and health facilities, ensuring that every drop of
+              blood reaches those in dire need. Our platform simplifies the
+              management of blood inventories, donor and recipient records, and
+              blood drives, fostering a community where generosity leads to
+              life-saving actions.
             </p>
             <p className="mb-1 text-2xl font-semibold leading-normal md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
               Our Mission
             </p>
             <p className="mb-6 font-roboto text-base text-[#121212] md:text-lg lg:text-xl">
-              To catalyze collaboration that turns innovative ideas into
-              reality, foster an ecosystem of feedback that nurtures growth, and
-              unlock opportunities that connect talent with the market.
+              Our mission is to make blood donation and management a seamless
+              process, ensuring that all individuals in need have timely access
+              to the right type of blood. We aim to uphold the highest standards
+              of safety and efficiency, while also promoting awareness and
+              education about the importance of blood donation.
             </p>
             <p className="mb-1 text-2xl font-semibold leading-normal md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
               Join Us
             </p>
             <p className="mb-6 font-roboto text-base text-[#121212] md:text-lg lg:text-xl">
-              Are you ready to be inspired and to inspire others? Sign up today
-              and start your journey.
+              Become an integral part of our lifesaving mission. Whether you're
+              a donor, a health professional, or someone looking to make a
+              difference, your journey starts here. Sign up today and be a
+              beacon of hope.
             </p>
             <div className="flex items-center gap-3">
               <a
