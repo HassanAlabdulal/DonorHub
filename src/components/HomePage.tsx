@@ -25,8 +25,7 @@ export default function HomePage() {
             },
             hidden: {},
           }}
-          className="my-16 mx-6 text-3xl max-w-2xl sm:text-4xl sm:max-w-3xl lg:text-5xl lg:max-w-4xl  xl:text-6xl xl:max-w-6xl
-           font-black leading-none tracking-tight text-center text-[#bfa260] font-nunito"
+          className="max-w-2xl mx-6 my-16 text-3xl font-black leading-none tracking-tight text-center text-red-600 sm:text-4xl sm:max-w-3xl lg:text-5xl lg:max-w-4xl xl:text-6xl xl:max-w-6xl font-nunito"
         >
           {Array.from(
             "InspireHub: Where Ideas Take Flight and Creativity Meets Opportunity!"
@@ -47,8 +46,8 @@ export default function HomePage() {
         <div className="flex items-center gap-3">
           <a
             href="MainPage"
-            className="flex select-none items-center cursor-pointer justify-center rounded-lg bg-[#5f7fbf] border-2 border-[#5f7fbf] px-3 py-2.5
-             text-base font-bold text-white align-middle transition-all duration-700 hover:bg-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl
+            className="flex select-none items-center cursor-pointer justify-center rounded-lg bg-[#292828] border-2 border-[#292828] px-3 py-2.5
+             text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
                disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-dark="true"
@@ -72,8 +71,8 @@ export default function HomePage() {
           </a>
 
           <a
-            className="flex select-none items-center justify-center rounded-lg border-2 border-[#5f7fbf]
-           px-[1.623rem] py-2.5 text-base font-bold text-[#5f7fbf] align-middle transition-all duration-500
+            className="flex select-none items-center justify-center rounded-lg border-2 border-[#292828]
+           px-[1.623rem] py-2.5 text-base font-bold text-[#292828] align-middle transition-all duration-500
             hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
             href="#learn-more"
           >

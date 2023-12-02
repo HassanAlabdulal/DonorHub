@@ -56,7 +56,7 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 z-[1000] bg-[#f7f7f7] flex items-center justify-between w-full px-16 pt-4 pb-4 font-medium max-md:px-8 md:ml-0 lg:ml-0">
       <div className="flex items-center gap-16">
-        <h1 className="text-2xl font-bold tracking-wider text-red-800 transition duration-300 ease-in-out delay-150 font-nunito hover:-translate-y-1 hover:scale-110">
+        <h1 className="text-2xl font-bold tracking-wider text-red-700 transition duration-300 ease-in-out delay-150 font-nunito hover:-translate-y-1 hover:scale-110">
           <a href="/">DonorHub</a>
         </h1>
         <motion.div
@@ -88,7 +88,7 @@ export default function Nav() {
             className="flex flex-col w-64 gap-4"
           >
             <motion.a
-              className="w-full py-1 text-white  bg-[#121212] rounded transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+              className="w-full py-1 text-white  bg-[#292828] rounded transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
               disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               href="SignInPage"
             >
@@ -113,7 +113,7 @@ export default function Nav() {
       >
         <a
           href="SignUpPage"
-          className="middle none center rounded-lg bg-[#1d1c1c] border-2 border-[#1d1c1c]  py-2 px-4.5 lg:py-1.5 lg:px-3.5 text-md font-bold font-nunito  text-white 
+          className="middle none center rounded-lg bg-[#292828] border-2 border-[#292828]  py-2 px-4.5 lg:py-1.5 lg:px-3.5 text-md font-bold font-nunito  text-white 
            roundedtransition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
            disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer"
           data-ripple-light="true"
@@ -123,7 +123,7 @@ export default function Nav() {
         <a
           href="SignInPage"
           className="middle none center rounded-lg border-2 border-[#121212] py-2 px-5 lg:py-1.5 lg:px-4 text-md font-bold font-nunito cursor-pointer  text-[#121212]
-           transition-all hover:opacity-75 focus:ring focus:ring-[##1d1c1c] active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+           transition-all hover:opacity-75 focus:ring focus:ring-[##292828] active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           data-ripple-dark="true"
         >
           Sign in
