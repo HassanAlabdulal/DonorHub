@@ -8,7 +8,7 @@ export default function Footer() {
             className="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse"
           >
             <span className="self-center text-2xl font-semibold text-[#5f7fbf] whitespace-nowrap">
-              InspireHub
+              DonorHub
             </span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
@@ -33,7 +33,7 @@ export default function Footer() {
         <span className="block text-sm text-gray-500 sm:text-center ">
           © 2023{" "}
           <a href="/" className="hover:underline">
-            InspireHub™
+            DonorHub™
           </a>
           . All Rights Reserved.
         </span>
