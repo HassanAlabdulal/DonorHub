@@ -7,7 +7,7 @@ export default function Footer() {
             href="/"
             className="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse"
           >
-            <span className="self-center text-2xl font-semibold text-[#5f7fbf] whitespace-nowrap">
+            <span className="self-center text-2xl font-semibold text-red-700 whitespace-nowrap">
               DonorHub
             </span>
           </a>
