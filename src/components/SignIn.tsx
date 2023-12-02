@@ -6,7 +6,7 @@ export default function SignIn() {
     <div className="flex items-center justify-center min-h-screen px-5 py-5 bg-[#f7f7f7] min-w-screen font-roboto">
       <div className="w-2/3 overflow-hidden text-gray-500 bg-gray-100 shadow-xl rounded-3xl">
         <div className="w-full md:flex">
-          <div className="hidden w-1/2 px-10 py-10 bg-[#5f7fbf] md:block">
+          <div className="hidden w-1/2 px-10 py-10 bg-[#292828] md:block">
             <svg
               id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641"
               data-name="Layer 1"
@@ -63,7 +63,7 @@ export default function SignIn() {
                 cx="364.43401"
                 cy="261.50202"
                 r="24.45"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <path
                 id="bbe451c3-febc-41ba-8083-4c8307a2e73e"
@@ -87,7 +87,7 @@ export default function SignIn() {
                 cx="225.46401"
                 cy="427.41999"
                 r="6.902"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <rect
                 id="ff33d889-4c74-4b91-85ef-b4882cc8fe76"
@@ -104,12 +104,12 @@ export default function SignIn() {
                 cx="225.46401"
                 cy="496.43702"
                 r="6.902"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <path
                 d="M660.69043,671.17188H591.62207a4.50493,4.50493,0,0,1-4.5-4.5v-24.208a4.50492,4.50492,0,0,1,4.5-4.5h69.06836a4.50491,4.50491,0,0,1,4.5,4.5v24.208A4.50492,4.50492,0,0,1,660.69043,671.17188Z"
                 transform="translate(-227.576 -76.46149)"
-                fill="#d0b880"
+                fill="#c03838"
               ></path>
               <circle
                 id="e12ee00d-aa4a-4413-a013-11d20b7f97f7"
@@ -117,7 +117,7 @@ export default function SignIn() {
                 cx="247.97799"
                 cy="427.41999"
                 r="6.902"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <circle
                 id="f58f497e-6949-45c8-be5f-eee2aa0f6586"
@@ -125,7 +125,7 @@ export default function SignIn() {
                 cx="270.492"
                 cy="427.41999"
                 r="6.902"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <circle
                 id="b4d4939a-c6e6-4f4d-ba6c-e8b05485017d"
@@ -133,7 +133,7 @@ export default function SignIn() {
                 cx="247.97799"
                 cy="496.43702"
                 r="6.902"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <circle
                 id="aff120b1-519b-4e96-ac87-836aa55663de"
@@ -141,7 +141,7 @@ export default function SignIn() {
                 cx="270.492"
                 cy="496.43702"
                 r="6.902"
-                fill="#d0b880"
+                fill="#c03838"
               ></circle>
               <path
                 id="f1094013-1297-477a-ac57-08eac07c4bd5"
@@ -213,7 +213,7 @@ export default function SignIn() {
           </div>
           <div className="w-full px-5 py-10 md:w-1/2 md:px-10">
             <div className="mb-10 text-center">
-              <h1 className="text-4xl font-bold text-[#bfa260] mb-1">
+              <h1 className="text-4xl font-bold text-[#c03838] mb-1">
                 Sign in
               </h1>
               <p>Enter your information to sign in</p>
@@ -230,7 +230,7 @@ export default function SignIn() {
                     </div>
                     <input
                       type="email"
-                      className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                      className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#292828]"
                       placeholder="inspirehub@example.com"
                     />
                   </div>
@@ -247,7 +247,7 @@ export default function SignIn() {
                     </div>
                     <input
                       type="password"
-                      className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                      className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#292828]"
                       placeholder="************"
                     />
                   </div>
@@ -257,7 +257,7 @@ export default function SignIn() {
               <div className="mb-20 text-right">
                 <a
                   href="ForgotPasswordPage"
-                  className="inline-block text-[#809bd0] hover:text-[#3e60a3] hover:underline transition-all duration-500"
+                  className="inline-block text-[#809bd0] hover:text-black hover:underline transition-all duration-500"
                 >
                   Forgot password?
                 </a>
@@ -266,8 +266,8 @@ export default function SignIn() {
               <div className="flex flex-col -mx-3">
                 <div className="w-full px-3 mb-5">
                   <button
-                    className="block w-full max-w-xs px-3 py-3 mx-auto font-semibold text-lg text-white rounded-lg uppercase bg-[#5f7fbf] border-2 border-[#5f7fbf] font-roboto
-         roundedtransition-all duration-700 hover:bg-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl
+                    className="block w-full max-w-xs px-3 py-3 mx-auto font-semibold text-lg text-white rounded-lg uppercase bg-[#292828] border-2 border-[#292828] font-roboto
+         roundedtransition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
          disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer"
                   >
                     Sign in
@@ -276,7 +276,7 @@ export default function SignIn() {
                 <div className="w-full px-3">
                   <p className="w-full max-w-xs px-3 mx-auto text-center text-[#121212]">
                     Don't have an account?{" "}
-                    <span className="text-[#809bd0] hover:text-[#3e60a3] hover:underline transition-all duration-500">
+                    <span className="text-[#809bd0] hover:text-black hover:underline transition-all duration-500">
                       <a href="SignUpPage">Sign up</a>
                     </span>
                   </p>
