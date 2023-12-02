@@ -66,7 +66,7 @@ export default function LearnMore() {
                  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
                 href="#features"
               >
-                Our Features
+                Blood Types
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function LearnMore() {
           className="flex flex-col items-center justify-center mt-32 mb-8"
         >
           <h1 className="mx-6 mt-24 mb-16 text-2xl font-extrabold text-center uppercase md:text-3xl xl:text-4xl tracking-loose">
-            Our Features
+            Vital Connections: Understanding Blood Type Compatibility
           </h1>
           <div className="relative ml-0 md:my-8 lg:w-10/12">
             <div className="container w-full h-full mx-auto">
