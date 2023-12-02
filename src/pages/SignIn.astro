@@ -2,25 +2,25 @@
 import MainLayout from "../layouts/main-layout.astro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
-import { createSupabaseServer } from "../utils/supabase";
+// import { createSupabaseServer } from "../utils/supabase";
 
-const supabase = createSupabaseServer(Astro.cookies);
+// const supabase = createSupabaseServer(Astro.cookies);
 
-if (Astro.request.method === "POST") {
-  const formData = await Astro.request.formData();
+// if (Astro.request.method === "POST") {
+//   const formData = await Astro.request.formData();
 
-  const email = formData.get("email")?.toString();
-  const password = formData.get("password")?.toString();
+//   const email = formData.get("email")?.toString();
+//   const password = formData.get("password")?.toString();
 
-  if (!email || !password)
-    throw new Error("Email or password is not provided.");
+//   if (!email || !password)
+//     throw new Error("Email or password is not provided.");
 
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email,
-    password,
-  });
-  console.log({ data, error });
-}
+//   const { data, error } = await supabase.auth.signInWithPassword({
+//     email,
+//     password,
+//   });
+//   console.log({ data, error });
+// }
 ---
 
 <MainLayout title="Sign In Page">
