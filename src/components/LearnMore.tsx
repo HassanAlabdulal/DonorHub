@@ -160,8 +160,8 @@ export default function LearnMore() {
               </div>
             </div>
             <img
-              className="w-6/12 mx-auto -mt-10"
-              src="src/assets/undraw_launching_re_tomg.svg"
+              className="w-6/12 mx-auto mt-10"
+              src="src/assets/blood types.png"
             />
           </div>
         </div>
