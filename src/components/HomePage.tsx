@@ -44,10 +44,6 @@ export default function HomePage() {
           ))}
         </motion.div>
 
-        {/* <p className="mb-8 text-2xl font-normal text-center text-[#121212] font-roboto max-md:text-3xl max-md:max-w-2xl max-sm:text-xl max-sm:max-w-sm sm:px-16 lg:px-48">
-          A platform for showcasing and evolving creative projects
-        </p> */}
-
         <div className="flex items-center gap-3">
           <a
             href="MainPage"
