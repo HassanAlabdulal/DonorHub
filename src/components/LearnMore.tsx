@@ -101,14 +101,13 @@ export default function LearnMore() {
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-left">
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
-                      Showcase Your Genius
+                      Know Your Type
                     </h4>
                     <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
-                      Unveil your creative prowess on InspireHub, where each
-                      project is a beacon to industry pioneers and visionaries.
-                      Share your work, captivate an audience of leaders, and let
-                      your ideas resonate in a space that celebrates and
-                      amplifies ingenuity.
+                      Unravel the significance of your blood type in the
+                      life-saving journey of donation. At DonorHub, we
+                      illuminate the importance of each blood type and how it
+                      can become a beacon of hope for those in need.
                     </p>
                   </div>
                 </div>
@@ -118,7 +117,7 @@ export default function LearnMore() {
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-left">
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
-                      Thrive on Collaboration
+                      Gift of Compatibility
                     </h4>
                     <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
                       Thrive on Collaboration Dive into a collaborative oasis
@@ -134,14 +133,12 @@ export default function LearnMore() {
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-left">
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
-                      Fuel Your Creativity
+                      Be a Lifesaver
                     </h4>
                     <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
-                      Spark your imagination with our AI-driven muse, crafting
-                      bespoke project suggestions that marry your interests with
-                      the pulse of current trends. It's the creative catalyst
-                      you need to ignite new ideas and venture into uncharted
-                      territories of innovation.
+                      Every blood type has the potential to save lives. Discover
+                      how your unique type contributes to the collective effort
+                      in emergencies and planned medical procedures.
                     </p>
                   </div>
                 </div>
@@ -150,14 +147,13 @@ export default function LearnMore() {
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4">
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
-                      Rise to the Top
+                      Connect the Drops
                     </h4>
                     <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
-                      Rise to the Top Ascend the creative ladder with our
-                      intuitive rating system, designed to showcase your
-                      project's impact and propel your work into the spotlight.
-                      It's more than recognition—it's a chance to be discovered
-                      by potential employers and become a paragon of excellence.
+                      Your blood type is more than a biological marker; it's a
+                      link in the lifesaving chain of humanity. Understand the
+                      power of your donation and see how every type plays a role
+                      in the universal story of giving.
                     </p>
                   </div>
                 </div>
