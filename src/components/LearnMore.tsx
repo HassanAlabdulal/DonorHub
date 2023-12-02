@@ -51,9 +51,9 @@ export default function LearnMore() {
               <a
                 href="SignUpPage"
                 className="flex select-none items-center justify-center cursor-pointer
-                 rounded-lg bg-[#5f7fbf] border-2 border-[#5f7fbf] px-[1.693rem]
+                 rounded-lg bg-[#292828] border-2 border-[#292828] px-[1.693rem]
                    py-2 text-base font-bold text-white align-middle
-                   transition-all duration-700 hover:bg-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl
+                   transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
                disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 data-ripple-dark="true"
               >
@@ -61,8 +61,8 @@ export default function LearnMore() {
               </a>
 
               <a
-                className="flex select-none items-center justify-center rounded-lg border-2 border-[#5f7fbf]
-                px-2 py-2 text-base font-bold text-[#5f7fbf] align-middle transition-all duration-500
+                className="flex select-none items-center justify-center rounded-lg border-2 border-[#292828]
+                px-2 py-2 text-base font-bold text-[#292828] align-middle transition-all duration-500
                  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
                 href="#features"
               >
@@ -92,7 +92,7 @@ export default function LearnMore() {
               <div className="relative h-full p-8 overflow-hidden wrap">
                 {/* Vertical line */}
                 <div
-                  className="absolute transform -translate-x-1/2 border-[#5f7fbf] left-1/2"
+                  className="absolute transform -translate-x-1/2 border-[#292828] left-1/2"
                   style={{ height: "100%", top: "0", borderLeftWidth: "2px" }}
                 ></div>
 
@@ -103,7 +103,7 @@ export default function LearnMore() {
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
                       Showcase Your Genius
                     </h4>
-                    <p className="text-base leading-snug text-left text-black text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
+                    <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
                       Unveil your creative prowess on InspireHub, where each
                       project is a beacon to industry pioneers and visionaries.
                       Share your work, captivate an audience of leaders, and let
@@ -120,7 +120,7 @@ export default function LearnMore() {
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
                       Thrive on Collaboration
                     </h4>
-                    <p className="text-base leading-snug text-left text-black text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
+                    <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
                       Thrive on Collaboration Dive into a collaborative oasis
                       where feedback refines and perfects. Engage with a
                       community where each critique enriches your work, ensuring
@@ -136,7 +136,7 @@ export default function LearnMore() {
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
                       Fuel Your Creativity
                     </h4>
-                    <p className="text-base leading-snug text-left text-black text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
+                    <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
                       Spark your imagination with our AI-driven muse, crafting
                       bespoke project suggestions that marry your interests with
                       the pulse of current trends. It's the creative catalyst
@@ -152,7 +152,7 @@ export default function LearnMore() {
                     <h4 className="mb-1 text-2xl font-semibold leading-normal text-left md:text-center md:text-3xl md:leading-relaxed lg:text-4xl lg:mb-2">
                       Rise to the Top
                     </h4>
-                    <p className="text-base leading-snug text-left text-black text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
+                    <p className="text-base leading-snug text-left text-[#121212] text-opacity-100 font-roboto md:text-center md:text-lg lg:text-xl">
                       Rise to the Top Ascend the creative ladder with our
                       intuitive rating system, designed to showcase your
                       project's impact and propel your work into the spotlight.
