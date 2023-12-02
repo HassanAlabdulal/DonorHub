@@ -56,8 +56,8 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 z-[1000] bg-[#f7f7f7] flex items-center justify-between w-full px-16 pt-4 pb-4 font-medium max-md:px-8 md:ml-0 lg:ml-0">
       <div className="flex items-center gap-16">
-        <h1 className="text-2xl font-bold tracking-wider text-[#3e60a3] transition duration-300 ease-in-out delay-150 font-nunito hover:-translate-y-1 hover:scale-110">
-          <a href="/">InspireHub</a>
+        <h1 className="text-2xl font-bold tracking-wider text-[#d3462f] transition duration-300 ease-in-out delay-150 font-nunito hover:-translate-y-1 hover:scale-110">
+          <a href="/">DonorHub</a>
         </h1>
         <motion.div
           animate={{ opacity: 1, y: 0 }}
@@ -83,8 +83,8 @@ export default function Nav() {
           />
           <motion.div
             animate={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -75 }}
-            transition={{ delay: 0.9 }}
+            initial={{ opacity: 0, x: -55 }}
+            transition={{ delay: 0.7 }}
             className="flex flex-col w-64 gap-4"
           >
             <motion.a
