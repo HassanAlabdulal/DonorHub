@@ -181,7 +181,7 @@ export default function SignIn() {
               <path
                 d="M849.55636,801.91945a4.47086,4.47086,0,0,1-4.415-3.69726c-6.34571-35.22559-27.08789-150.40528-27.584-153.59571a1.42684,1.42684,0,0,1-.01562-.22168v-8.58789a1.489,1.489,0,0,1,.27929-.87207l2.74024-3.83789a1.47845,1.47845,0,0,1,1.14355-.625c15.62207-.73242,66.78418-2.8789,69.25586.209h0c2.48242,3.10351,1.60547,12.50683,1.4043,14.36035l.00977.19336,22.98535,146.99512a4.51238,4.51238,0,0,1-3.71485,5.13476l-14.35644,2.36524a4.52127,4.52127,0,0,1-5.02539-3.09278c-4.44043-14.18847-19.3291-61.918-24.48926-80.38672a.49922.49922,0,0,0-.98047.13868c.25781,17.60546.88086,62.52343,1.0957,78.0371l.02344,1.6709a4.51811,4.51811,0,0,1-4.09277,4.53614l-13.84375,1.25781C849.83565,801.91359,849.695,801.91945,849.55636,801.91945Z"
                 transform="translate(-227.576 -76.46149)"
-                fill="#2f2e41"
+                fill="#c03838"
               ></path>
               <path
                 id="ae7af94f-88d7-4204-9f07-e3651de85c05"
@@ -231,7 +231,7 @@ export default function SignIn() {
                     <input
                       type="email"
                       className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#292828]"
-                      placeholder="inspirehub@example.com"
+                      placeholder="donorhub@example.com"
                     />
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function SignIn() {
               <div className="mb-20 text-right">
                 <a
                   href="ForgotPasswordPage"
-                  className="inline-block text-[#809bd0] hover:text-black hover:underline transition-all duration-500"
+                  className="inline-block text-[#809bd0] hover:text-[#3e60a3] hover:underline transition-all duration-500"
                 >
                   Forgot password?
                 </a>
@@ -276,7 +276,7 @@ export default function SignIn() {
                 <div className="w-full px-3">
                   <p className="w-full max-w-xs px-3 mx-auto text-center text-[#121212]">
                     Don't have an account?{" "}
-                    <span className="text-[#809bd0] hover:text-black hover:underline transition-all duration-500">
+                    <span className="text-[#809bd0] hover:text-[#3e60a3] hover:underline transition-all duration-500">
                       <a href="SignUpPage">Sign up</a>
                     </span>
                   </p>
