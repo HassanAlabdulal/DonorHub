@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Policy from "../components/Policy.tsx";
-import PasswordStrengthIndicator from "./UI/PasswordStrengthIndicator.tsx";
+import PasswordStrengthIndicator from "..//components/UI/PasswordStrengthIndicator";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,7 +13,7 @@ import {
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { createSupabaseBrowser } from "../utils/supabase.ts";
+// import { createSupabaseBrowser } from "../utils/supabase.ts";
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
 const HideIcon = () => <FontAwesomeIcon icon={faEyeSlash} />;
@@ -46,12 +46,12 @@ const SignUp = () => {
     setPasswordStrength(checkPasswordStrength(password));
   };
 
-  const handleSignUp = async () => {
-    const supabase = createSupabaseBrowser();
-    const { data, error } = await supabase.auth.signUp({ email, password });
-    if (error) return console.error(error);
-    if (data) return console.log(data);
-  };
+  //   const handleSignUp = async () => {
+  //     const supabase = createSupabaseBrowser();
+  //     const { data, error } = await supabase.auth.signUp({ email, password });
+  //     if (error) return console.error(error);
+  //     if (data) return console.log(data);
+  //   };
 
   const handlePolicyClick = () => {
     setShowPolicy(true);
@@ -68,7 +68,7 @@ const SignUp = () => {
 
   const renderButton = () => {
     if (formStep > 3) {
-      handleSignUp();
+      //   handleSignUp();
       return undefined;
     } else if (formStep === 3) {
       return (
