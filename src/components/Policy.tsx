@@ -6,7 +6,7 @@ interface PolicyProps {
 export default function Policy({ onClose, showReturnButton }: PolicyProps) {
   return (
     <div className="bg-[#f7f7f7] pt-[65px] flex flex-col items-center min-h-screen font-roboto">
-      <h1 className="text-[#bfa260] font-roboto font-bold text-3xl mb-6">
+      <h1 className="text-[#c03838] font-roboto font-bold text-3xl mb-6">
         Privacy Policy
       </h1>
 
@@ -15,71 +15,70 @@ export default function Policy({ onClose, showReturnButton }: PolicyProps) {
         style={{ maxHeight: "70vh" }}
       >
         <section className="mb-6 space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">
+          <h2 className="text-[#c03838] font-semibold text-xl">
             Information Collection
           </h2>
           <p className="font-normal">
-            We collect personal information you provide to us such as name,
-            email address, and project details when you register an account or
-            interact with our services. Technical data like IP address and
-            browser type may be collected to improve your experience.
+            When you register for an account or interact with our services, we
+            collect personal details such as your name, contact information,
+            blood type, and health-related information crucial for the blood
+            donation process. We may also collect technical data, such as your
+            IP address and browser type, to enhance the functionality and user
+            experience of our system.
           </p>
         </section>
         <section className="mb-6 space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">
+          <h2 className="text-[#c03838] font-semibold text-xl">
             Use of Information
           </h2>
           <p className="font-normal">
-            Your information is used to manage your account, display your
-            projects, provide AI-driven project suggestions, and improve our
-            platform. We may also use it to communicate with you about updates
-            and services.
+            The information we collect is integral to providing you with a
+            personalized and efficient experience. This includes managing your
+            account, facilitating the matching of blood donors with recipients,
+            and providing tailored notifications and services. We may
+            communicate with you directly regarding updates, alerts, or
+            information related to your donations or requests.
           </p>
         </section>
         <section className="mb-6 space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">Data Sharing</h2>
+          <h2 className="text-[#c03838] font-semibold text-xl">Data Sharing</h2>
           <p className="font-normal">
-            We do not sell your information. We may share it with potential
-            employers with your consent, and to comply with legal obligations or
-            with service providers who assist in operating our platform.
+            Your privacy is paramount. We do not sell your information. We may
+            share your information with medical institutions, hospitals, and
+            clinics, with your explicit consent, for the purpose of facilitating
+            blood donations and related services. We may also share information
+            to comply with legal requirements or with third-party service
+            providers who assist us in operating our platform.
           </p>
         </section>
         <section className="mb-6 space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">User Rights</h2>
+          <h2 className="text-[#c03838] font-semibold text-xl">User Rights</h2>
           <p className="font-normal">
-            You have the right to access, correct, or delete your personal
-            information. You may also opt out of certain uses of your
-            information as described in this policy.
+            You retain rights over your personal information. You may request
+            access to, correction of, or deletion of your personal data. You
+            also have the right to withdraw consent or opt-out of certain data
+            uses as outlined in this policy.
           </p>
         </section>
         <section className="mb-6 space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">
+          <h2 className="text-[#c03838] font-semibold text-xl">
             Data Security
           </h2>
           <p className="font-normal">
-            We take the security of your data seriously and implement
-            appropriate measures to prevent unauthorized access, disclosure, or
-            loss.
-          </p>
-        </section>
-        <section className="mb-6 space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">
-            Children’s Privacy
-          </h2>
-          <p className="font-normal">
-            Our service is not intended for children under 13, and we do not
-            knowingly collect their data. If we learn we have such information,
-            we will take steps to remove it promptly.
+            We recognize the sensitivity of your personal health information and
+            prioritize the security of your data. We employ robust measures to
+            prevent unauthorized access, disclosure, or loss of information.
           </p>
         </section>
         <section className="space-y-4">
-          <h2 className="text-[#bfa260] font-semibold text-xl">
+          <h2 className="text-[#c03838] font-semibold text-xl">
             Changes to the Privacy Policy
           </h2>
           <p className="font-normal">
-            Our Privacy Policy may change from time to time. We will post any
-            changes on this page and encourage you to review our policy
-            periodically.
+            This Privacy Policy may be updated to reflect changes to our
+            information practices. Any changes will be posted on this page with
+            an updated revision date. We encourage you to periodically review
+            this page for the latest information on our privacy practices.
           </p>
         </section>
       </div>
@@ -89,7 +88,7 @@ export default function Policy({ onClose, showReturnButton }: PolicyProps) {
           <p className="font-normal text-black font-roboto">
             If you have questions about this policy, please contact us through
             <a
-              href="mailto:support@inspirehub.com"
+              href="mailto:support@donorhub.com"
               className="text-[#5f7fbf] font-extrabold hover:underline"
             >
               {" "}
