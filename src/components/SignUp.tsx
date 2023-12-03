@@ -11,6 +11,9 @@ import {
   faChevronLeft,
   faEye,
   faEyeSlash,
+  faSquarePhoneFlip,
+  faCalendarDays,
+  faWeightScale,
 } from "@fortawesome/free-solid-svg-icons";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
@@ -147,9 +150,7 @@ const SignUp = () => {
                 <h2 className="mb-8 text-3xl font-semibold ">
                   Personal Information
                 </h2>
-                <label className="px-1 mb-2 text-xs font-semibold">
-                  First name
-                </label>
+                <label className="px-1 mb-2 text-xs font-semibold">Name</label>
                 <div className="flex mb-3">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
@@ -159,22 +160,22 @@ const SignUp = () => {
                   <input
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="Hassan"
+                    placeholder="Hassan Alabdulal"
                   />
                 </div>
                 <label className="px-1 mb-2 text-xs font-semibold">
-                  Last name
+                  Phone Number
                 </label>
                 <div className="flex">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
-                      <FontAwesomeIcon icon={faUser} />
+                      <FontAwesomeIcon icon={faSquarePhoneFlip} />
                     </i>
                   </div>
                   <input
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="Alabdulal"
+                    placeholder="+996555555555"
                   />
                 </div>
               </section>
@@ -271,59 +272,37 @@ const SignUp = () => {
                 <h2 className="mb-8 text-3xl font-semibold ">
                   Academic Information
                 </h2>
-                <label className="px-1 mb-2 text-xs font-semibold">Major</label>
+                <label className="px-1 mb-2 text-xs font-semibold">Age</label>
                 <div className="flex mb-4">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
-                      <FontAwesomeIcon icon={faBook} />
+                      <FontAwesomeIcon icon={faCalendarDays} />
                     </i>
                   </div>
                   <input
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="Software Engineering"
+                    placeholder="21"
                   />
                 </div>
                 <label className="px-1 mb-2 text-xs font-semibold">
-                  Academic Level
+                  Weight
                 </label>
-                <div className="flex flex-col gap-4 md:flex-row">
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      name="academicLevel"
-                      value="Undergraduate"
-                      id="undergraduate"
-                    />
-                    <label htmlFor="undergraduate" className="ml-2">
-                      Undergraduate
-                    </label>
+                <div className="flex mb-4">
+                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
+                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
+                      <FontAwesomeIcon icon={faWeightScale} />
+                    </i>
                   </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      name="academicLevel"
-                      value="Graduate"
-                      id="graduate"
-                    />
-                    <label htmlFor="graduate" className="ml-2">
-                      Graduate
-                    </label>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      name="academicLevel"
-                      value="Employer"
-                      id="employer"
-                    />
-                    <label htmlFor="employer" className="ml-2">
-                      Employer
-                    </label>
-                  </div>
+                  <input
+                    type="text"
+                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    placeholder="80kg"
+                  />
                 </div>
+                <label className="px-1 mb-2 text-xs font-semibold">
+                  Blood Type
+                </label>
               </section>
             )}
 
