@@ -16,6 +16,15 @@ import {
   faWeightScale,
 } from "@fortawesome/free-solid-svg-icons";
 
+import {
+  Menu,
+  MenuHandler,
+  Button,
+  MenuList,
+  MenuItem,
+  Checkbox,
+} from "@material-tailwind/react";
+
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
