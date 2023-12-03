@@ -76,8 +76,8 @@ const SignUp = () => {
           onClick={completeFormStep}
           type="button"
           className="w-full px-8 py-6 mt-6 text-white  disabled:bg-gray-400 disabled:cursor-not-allowed flex select-none items-center
-           cursor-pointer justify-center rounded-lg bg-[#5f7fbf] border-2 border-[#5f7fbf] text-base font-bold align-middle transition-all
-            duration-700 hover:bg-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl
+           cursor-pointer justify-center rounded-lg bg-[#292828] border-2 border-[#292828] text-base font-bold align-middle transition-all
+            duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
             disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           Create Account
@@ -89,8 +89,8 @@ const SignUp = () => {
           onClick={completeFormStep}
           type="button"
           className="w-full px-8 py-6 mt-6 text-white  disabled:bg-gray-400 disabled:cursor-not-allowed flex select-none items-center
-          cursor-pointer justify-center rounded-lg bg-[#5f7fbf] border-2 border-[#5f7fbf] text-base font-bold align-middle transition-all
-           duration-700 hover:bg-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl
+          cursor-pointer justify-center rounded-lg bg-[#292828] border-2 border-[#292828] text-base font-bold align-middle transition-all
+           duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
            disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           Next Step
@@ -109,13 +109,13 @@ const SignUp = () => {
           clipPath: "polygon(0 0, 100% 0, 100% 80%, 0% 100%)",
           height: "34rem",
         }}
-        className="absolute inset-x-0 top-0 bg-[#5f7fbf]"
+        className="absolute inset-x-0 top-0 bg-[#292828]"
       ></div>
       <div className="z-10 mx-auto mt-48 text-center">
         <h1 className="text-5xl font-semibold text-white">
           Welcome to <span className="font-bold ">InspireHub</span>
         </h1>
-        <p className="mt-3 text-[#121212]">
+        <p className="mt-3 text-[#c03838]">
           Become a new member in 4 easy steps
         </p>
       </div>
