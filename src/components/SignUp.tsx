@@ -7,7 +7,6 @@ import {
   faEnvelope,
   faLock,
   faUser,
-  faBook,
   faChevronLeft,
   faEye,
   faEyeSlash,
@@ -15,14 +14,12 @@ import {
   faCalendarDays,
   faWeightScale,
 } from "@fortawesome/free-solid-svg-icons";
-
 import {
   Menu,
   MenuHandler,
-  Button,
   MenuList,
   MenuItem,
-  Checkbox,
+  Button,
 } from "@material-tailwind/react";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
@@ -312,6 +309,16 @@ const SignUp = () => {
                 <label className="px-1 mb-2 text-xs font-semibold">
                   Blood Type
                 </label>
+                <Menu>
+                  <MenuHandler>
+                    <Button>Blood Type</Button>
+                  </MenuHandler>
+                  <MenuList>
+                    <MenuItem>A</MenuItem>
+                    <MenuItem>A+</MenuItem>
+                    <MenuItem>B</MenuItem>
+                  </MenuList>
+                </Menu>
               </section>
             )}
 
