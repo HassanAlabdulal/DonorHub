@@ -17,14 +17,6 @@ import {
   faCalendarDays,
   faWeightScale,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  Radio,
-  Card,
-  List,
-  ListItem,
-  ListItemPrefix,
-  Typography,
-} from "@material-tailwind/react";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
 const radioButtonOptions: RadioButtonOption[] = [
@@ -32,7 +24,6 @@ const radioButtonOptions: RadioButtonOption[] = [
   { id: "blood-type-a", label: "A" },
   { id: "blood-type-b", label: "B" },
   { id: "blood-type-ab", label: "AB" },
-  // Add more options as needed
 ];
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
