@@ -8,20 +8,17 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-type BloodTypeOption = {
+type RadioButtonOption = {
   id: string;
   label: string;
 };
 
-type BloodTypeSelectorProps = {
+type RadioButtonProps = {
   name: string;
-  options: BloodTypeOption[];
+  options: RadioButtonOption[];
 };
 
-const BloodTypeSelector: React.FC<BloodTypeSelectorProps> = ({
-  name,
-  options,
-}) => {
+const RadioButtonSelector: React.FC<RadioButtonProps> = ({ name, options }) => {
   return (
     <Card className="w-full max-w-[28rem]">
       <List className="flex-row">
@@ -57,4 +54,4 @@ const BloodTypeSelector: React.FC<BloodTypeSelectorProps> = ({
   );
 };
 
-export default BloodTypeSelector;
+export default RadioButtonSelector;
