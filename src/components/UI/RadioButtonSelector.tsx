@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-type RadioButtonOption = {
+export type RadioButtonOption = {
   id: string;
   label: string;
 };

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Policy from "../components/Policy.tsx";
 import PasswordStrengthIndicator from "..//components/UI/PasswordStrengthIndicator";
+import RadioButtonSelector, {
+  type RadioButtonOption,
+} from "../components/UI/RadioButtonSelector";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -24,6 +27,13 @@ import {
 } from "@material-tailwind/react";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
+const radioButtonOptions: RadioButtonOption[] = [
+  { id: "blood-type-o", label: "O" },
+  { id: "blood-type-a", label: "A" },
+  { id: "blood-type-b", label: "B" },
+  { id: "blood-type-ab", label: "AB" },
+  // Add more options as needed
+];
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
 const HideIcon = () => <FontAwesomeIcon icon={faEyeSlash} />;
@@ -310,6 +320,10 @@ const SignUp = () => {
                 <label className="px-1 mb-2 text-xs font-semibold">
                   Blood Type
                 </label>
+                <RadioButtonSelector
+                  name="blood-type"
+                  options={radioButtonOptions}
+                />
               </section>
             )}
 
