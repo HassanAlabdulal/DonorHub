@@ -28,7 +28,7 @@ const radioButtonOptions: RadioButtonOption[] = [
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
 const HideIcon = () => <FontAwesomeIcon icon={faEyeSlash} />;
-const MAX_STEPS = 4;
+const MAX_STEPS = 5;
 
 const SignUp = () => {
   const [formStep, setFormStep] = useState(0);
@@ -78,10 +78,10 @@ const SignUp = () => {
   };
 
   const renderButton = () => {
-    if (formStep > 3) {
+    if (formStep > 4) {
       //   handleSignUp();
       return undefined;
-    } else if (formStep === 3) {
+    } else if (formStep === 4) {
       return (
         <button
           onClick={completeFormStep}
@@ -126,8 +126,8 @@ const SignUp = () => {
         <h1 className="text-5xl font-semibold text-white">
           Welcome to <span className="font-bold ">InspireHub</span>
         </h1>
-        <p className="mt-3 text-[#c03838]">
-          Become a new member in 4 easy steps
+        <p className="mt-3 text-lg text-[#c03838]">
+          Become a new member in 5 easy steps
         </p>
       </div>
       <div
@@ -319,6 +319,49 @@ const SignUp = () => {
             )}
 
             {formStep === 3 && (
+              <section className="flex flex-col">
+                <h2 className="mb-8 text-3xl font-semibold ">
+                  Academic Information
+                </h2>
+                <label className="px-1 mb-2 text-xs font-semibold">Age</label>
+                <div className="flex mb-4">
+                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
+                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
+                      <FontAwesomeIcon icon={faCalendarDays} />
+                    </i>
+                  </div>
+                  <input
+                    type="text"
+                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    placeholder="21"
+                  />
+                </div>
+                <label className="px-1 mb-2 text-xs font-semibold">
+                  Weight
+                </label>
+                <div className="flex mb-4">
+                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
+                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
+                      <FontAwesomeIcon icon={faWeightScale} />
+                    </i>
+                  </div>
+                  <input
+                    type="text"
+                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    placeholder="80kg"
+                  />
+                </div>
+                <label className="px-1 mb-2 text-xs font-semibold">
+                  Blood Type
+                </label>
+                <RadioButtonSelector
+                  name="blood-type"
+                  options={radioButtonOptions}
+                />
+              </section>
+            )}
+
+            {formStep === 4 && (
               <section>
                 <h2 className="mb-8 text-3xl font-semibold ">
                   Legal Information
@@ -358,7 +401,7 @@ const SignUp = () => {
               </div>
             )}
 
-            {formStep === 4 && (
+            {formStep === 5 && (
               <section>
                 <h2 className="mb-8 text-3xl font-semibold">
                   Your account has been successfully created!
