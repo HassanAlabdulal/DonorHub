@@ -16,6 +16,7 @@ import {
   faSquarePhoneFlip,
   faCalendarDays,
   faWeightScale,
+  faIdBadge,
 } from "@fortawesome/free-solid-svg-icons";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
@@ -169,6 +170,21 @@ const SignUp = () => {
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
                     placeholder="Hassan Alabdulal"
+                  />
+                </div>
+                <label className="px-1 mb-2 text-xs font-semibold">
+                  National ID
+                </label>
+                <div className="flex mb-3">
+                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
+                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
+                      <FontAwesomeIcon icon={faIdBadge} />
+                    </i>
+                  </div>
+                  <input
+                    type="text"
+                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    placeholder="1111111111"
                   />
                 </div>
                 <label className="px-1 mb-2 text-xs font-semibold">
