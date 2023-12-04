@@ -16,7 +16,7 @@ import {
   faSquarePhoneFlip,
   faCalendarDays,
   faWeightScale,
-  faIdBadge,
+  faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
@@ -178,7 +178,7 @@ const SignUp = () => {
                 <div className="flex mb-3">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
-                      <FontAwesomeIcon icon={faIdBadge} />
+                      <FontAwesomeIcon icon={faIdCard} />
                     </i>
                   </div>
                   <input
