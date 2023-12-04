@@ -1,0 +1,60 @@
+import React from "react";
+import {
+  Card,
+  List,
+  ListItem,
+  ListItemPrefix,
+  Radio,
+  Typography,
+} from "@material-tailwind/react";
+
+type BloodTypeOption = {
+  id: string;
+  label: string;
+};
+
+type BloodTypeSelectorProps = {
+  name: string;
+  options: BloodTypeOption[];
+};
+
+const BloodTypeSelector: React.FC<BloodTypeSelectorProps> = ({
+  name,
+  options,
+}) => {
+  return (
+    <Card className="w-full max-w-[28rem]">
+      <List className="flex-row">
+        {options.map((option) => (
+          <ListItem className="p-0" key={option.id}>
+            <label
+              htmlFor={option.id}
+              className="flex items-center w-full px-3 py-2 cursor-pointer"
+            >
+              <ListItemPrefix className="mr-3">
+                <Radio
+                  name={name}
+                  id={option.id}
+                  ripple={false}
+                  className="hover:before:opacity-0"
+                  containerProps={{
+                    className: "p-0",
+                  }}
+                  crossOrigin={undefined}
+                />
+              </ListItemPrefix>
+              <Typography
+                color="blue-gray"
+                className="font-medium text-blue-gray-400"
+              >
+                {option.label}
+              </Typography>
+            </label>
+          </ListItem>
+        ))}
+      </List>
+    </Card>
+  );
+};
+
+export default BloodTypeSelector;
