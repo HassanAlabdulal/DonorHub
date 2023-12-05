@@ -67,12 +67,12 @@ const NewPassword: React.FC = () => {
     <div className="flex items-center justify-center min-h-screen px-5 py-5 bg-[#f7f7f7] min-w-screen font-roboto">
       <div className="w-2/3 overflow-hidden text-gray-500 bg-gray-100 shadow-xl rounded-3xl">
         <div className="w-full md:flex">
-          <div className="hidden w-1/2 bg-[#5f7fbf] md:block">
+          <div className="hidden w-1/2 bg-[#292828] md:block">
             <img src="src/assets/Reset password.png" alt="Reset Password" />
           </div>
           <div className="w-full px-5 py-36 md:w-1/2 md:px-10">
             <div className="mb-10 text-center">
-              <h1 className="text-4xl mb-2 font-bold text-[#bfa260]">
+              <h1 className="mb-2 text-4xl font-bold text-red-700">
                 Set New Password
               </h1>
               <p>Please enter your new password</p>
@@ -85,7 +85,7 @@ const NewPassword: React.FC = () => {
                 <div className="relative">
                   <input
                     type={showNewPassword ? "text" : "password"}
-                    className="w-full py-2 pl-3 pr-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    className="w-full py-2 pl-3 pr-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#292828]"
                     placeholder="New Password"
                     value={newPassword}
                     onChange={handleNewPasswordChange}
@@ -113,7 +113,7 @@ const NewPassword: React.FC = () => {
                 <div className="relative">
                   <input
                     type={showConfirmPassword ? "text" : "password"}
-                    className="w-full py-2 pl-3 pr-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    className="w-full py-2 pl-3 pr-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#292828]"
                     placeholder="Confirm New Password"
                     value={confirmPassword}
                     onChange={handleConfirmPasswordChange}
@@ -133,7 +133,8 @@ const NewPassword: React.FC = () => {
               <div className="w-full px-3 mt-10">
                 <a
                   href="SignInPage"
-                  className="block w-full max-w-xs text-center mx-auto bg-[#5f7fbf] text-white font-roboto font-semibold text-lg rounded-lg px-3 py-3 uppercase shadow-md hover:shadow-xl transition-all duration-700 focus:outline-none hover:bg-[#3e60a3]"
+                  className="block w-full max-w-xs text-center mx-auto bg-[#292828] text-white font-roboto font-semibold 
+                  text-lg rounded-lg px-3 py-3 uppercase shadow-md hover:shadow-xl transition-all duration-700 focus:outline-none hover:bg-black"
                 >
                   Set New Password
                 </a>
