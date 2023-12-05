@@ -63,8 +63,7 @@ const SignUp = () => {
     useState<boolean>(false);
 
   const [dateOfBirth, setDateOfBirth] = useState("");
-  const [age, setAge] = useState<number | "">(""); // This allows the age state to be a number or an empty string.
-
+  const [age, setAge] = useState<number | "">("");
   useEffect(() => {
     if (dateOfBirth) {
       const today = new Date();
@@ -337,20 +336,6 @@ const SignUp = () => {
                   Health Information
                 </h2>
 
-                {/* <label className="px-1 mb-2 text-xs font-semibold">Age</label>
-                <div className="flex mb-4">
-                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
-                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
-                      <FontAwesomeIcon icon={faCalendarDays} />
-                    </i>
-                  </div>
-                  <input
-                    type="text"
-                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="21"
-                  />
-                </div> */}
-
                 <div className="flex items-end gap-4 mb-4">
                   <div className="flex-1">
                     <label
@@ -376,7 +361,6 @@ const SignUp = () => {
                       Age
                     </label>
                     <div className="relative flex items-center">
-                      {/* Icon container adjusted to match the weight input icon style */}
                       <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                         <FontAwesomeIcon
                           icon={faCalendarDays}
