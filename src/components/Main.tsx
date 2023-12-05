@@ -16,83 +16,83 @@ export default function Main() {
   const DonationEvents: DonationEvent[] = [
     {
       id: 1,
-      title: "E-commerce Website Redesign",
-      endDate: "2023-05-15",
-      location: "John Doe",
+      title: "City Hall Blood Drive",
+      endDate: "2023-05-20",
+      location: "City Hall Auditorium",
       description:
-        "Redesign and modernize our e-commerce platform to improve user experience, increase conversion rates, and enhance security.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Tech",
+        "Support our city's healthcare system by participating in the annual City Hall Blood Drive. Your donation matters!",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Community",
     },
     {
       id: 2,
-      title: "AI-Powered Chatbot Development",
-      endDate: "2023-08-20",
-      location: "Jane Smith",
+      title: "Healthcare Heroes Donation Campaign",
+      endDate: "2023-06-12",
+      location: "Local Hospital Conference Room",
       description:
-        "Develop an AI-powered chatbot to provide instant customer support, answer inquiries, and streamline communication.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Tech",
+        "Give back to those who care for us. Donate blood and support the healthcare heroes who save lives every day.",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Health",
     },
     {
       id: 3,
-      title: "Market Expansion Strategy",
-      endDate: "2023-04-10",
-      location: "Michael Johnson",
+      title: "Summer College Blood Drive",
+      endDate: "2023-07-15",
+      location: "University Commons Area",
       description:
-        "Develop a comprehensive strategy to expand our market presence in emerging economies, focusing on growth and profitability.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Business",
+        "Students and staff, show your college spirit and help save lives by donating blood this summer.",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Education",
     },
     {
       id: 4,
-      title: "Financial Modeling and Forecasting",
-      endDate: "2023-06-30",
-      location: "Emily Brown",
+      title: "Neighborhood Heroes Blood Drive",
+      endDate: "2023-08-22",
+      location: "Neighborhood Rec Center",
       description:
-        "Create financial models and forecasts to aid in decision-making, budgeting, and financial planning for the next fiscal year.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Business",
+        "Join your neighbors in being a local hero! Your blood donation can save up to three lives.",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Community",
     },
     {
       id: 5,
-      title: "Bridge Rehabilitation Project",
-      endDate: "2023-09-25",
-      location: "David Wilson",
+      title: "Corporate Giving Blood Drive",
+      endDate: "2023-09-30",
+      location: "Corporate HQ Courtyard",
       description:
-        "Rehabilitate an aging bridge to ensure structural integrity, safety, and longevity, incorporating modern engineering practices.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Engineering",
+        "Our company is hosting a blood drive to support local blood banks. Employees and the public are welcome!",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Corporate",
     },
     {
       id: 6,
-      title: "Advanced Robotics System Design",
-      endDate: "2023-07-12",
-      location: "Sophia Lee",
+      title: "Athletes for Life Blood Drive",
+      endDate: "2023-10-20",
+      location: "City Sports Arena",
       description:
-        "Design and develop advanced robotics systems for industrial automation, improving efficiency and reducing production costs.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Engineering",
+        "Athletes and fans, team up to save lives! Your donation is more than just blood; it's a lifeline.",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Sports",
     },
     {
       id: 7,
-      title: "Brand Identity Redesign",
-      endDate: "2023-03-02",
-      location: "Daniel Clark",
+      title: "Hometown Heroes Blood Drive",
+      endDate: "2023-11-11",
+      location: "Central Fire Station",
       description:
-        "Redesign the brand identity, including logo, color scheme, and visual elements, to reflect our evolving brand image.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Design",
+        "Join our first responders in a blood drive to help our community's hospitals. Every pint counts!",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "First Responders",
     },
     {
       id: 8,
-      title: "User Interface (UI) Redesign",
-      endDate: "2023-10-15",
-      location: "d",
+      title: "Holiday Season Blood Drive",
+      endDate: "2023-12-15",
+      location: "Downtown Convention Center",
       description:
-        "Revamp the user interface of our mobile app to enhance user-friendliness, aesthetics, and overall user satisfaction.",
-      imageUrl: "src/assets/ContactUs.png",
-      category: "Design",
+        "The gift of blood is the gift of life. During this season of giving, please consider donating blood to help those in need.",
+      imageUrl: "src/assets/Blood donation-.png",
+      category: "Seasonal",
     },
   ];
 
@@ -108,7 +108,10 @@ export default function Main() {
   return (
     <div className="bg-[#f7f7f7] pt-20 flex flex-col items-center min-h-screen font-roboto gap-12">
       <div className="flex flex-col items-center w-full gap-6">
-        <div className="flex flex-col gap-3">
+        <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#c03838] py-10">
+          Donation Events
+        </h1>
+        {/* <div className="flex flex-col gap-3">
           <label
             htmlFor="name"
             className="text-center block text-xl font-bold font-nunito text-[#bfa260]"
@@ -159,7 +162,7 @@ export default function Main() {
           >
             Add Project
           </a>
-        </div>
+        </div> */}
 
         {/* Projects Section */}
         <ul
@@ -178,7 +181,7 @@ export default function Main() {
                   src={DonationEvent.imageUrl}
                   alt={DonationEvent.title}
                 />
-                <h3 className="mt-6 text-[#bfa260] text-base font-nunito font-bold">
+                <h3 className=" text-[#bfa260] text-base font-nunito font-bold">
                   {DonationEvent.title}
                 </h3>
                 <dl className="flex flex-col justify-between flex-grow gap-3 mt-1">
