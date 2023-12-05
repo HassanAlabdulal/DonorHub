@@ -5,6 +5,8 @@ import RadioButtonSelector, {
   type RadioButtonOption,
 } from "../components/UI/RadioButtonSelector";
 
+import { MenuWithCheckbox } from "../components/UI/MenuWithCheckBox";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -17,6 +19,10 @@ import {
   faCalendarDays,
   faWeightScale,
   faIdCard,
+  faEarthAmericas,
+  faLocationDot,
+  faRoad,
+  faHashtag,
 } from "@fortawesome/free-solid-svg-icons";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
@@ -25,6 +31,20 @@ const radioButtonOptions: RadioButtonOption[] = [
   { id: "blood-type-a", label: "A" },
   { id: "blood-type-b", label: "B" },
   { id: "blood-type-ab", label: "AB" },
+];
+
+const diseaseItems = [
+  { id: "disease1", label: "Allergies" },
+  { id: "disease2", label: "Asthma" },
+  { id: "disease3", label: "Bleeding Conditions" },
+  { id: "disease4", label: "High Blood Pressure" },
+  { id: "disease5", label: "Cancer" },
+  { id: "disease6", label: "Chronic Illnesses" },
+  { id: "disease7", label: "Hepatitis/Jaundice" },
+  { id: "disease8", label: "HIV/AIDS" },
+  { id: "disease9", label: "Malaria" },
+  { id: "disease10", label: "Nothing" },
+  // ... add more diseases as needed
 ];
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
@@ -294,7 +314,7 @@ const SignUp = () => {
             {formStep === 2 && (
               <section className="flex flex-col">
                 <h2 className="mb-8 text-3xl font-semibold ">
-                  Academic Information
+                  Health Information
                 </h2>
                 <label className="px-1 mb-2 text-xs font-semibold">Age</label>
                 <div className="flex mb-4">
@@ -331,49 +351,75 @@ const SignUp = () => {
                   name="blood-type"
                   options={radioButtonOptions}
                 />
+
+                <label className="px-1 mt-4 mb-2 text-xs font-semibold">
+                  Disease
+                </label>
+                <MenuWithCheckbox title="Diseases" items={diseaseItems} />
               </section>
             )}
 
             {formStep === 3 && (
               <section className="flex flex-col">
-                <h2 className="mb-8 text-3xl font-semibold ">
-                  Academic Information
-                </h2>
-                <label className="px-1 mb-2 text-xs font-semibold">Age</label>
+                <h2 className="mb-8 text-3xl font-semibold ">Address</h2>
+                <label className="px-1 mb-2 text-xs font-semibold">
+                  Country
+                </label>
                 <div className="flex mb-4">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
-                      <FontAwesomeIcon icon={faCalendarDays} />
+                      <FontAwesomeIcon icon={faEarthAmericas} />
                     </i>
                   </div>
                   <input
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="21"
+                    placeholder="Saudi Arabia"
                   />
                 </div>
-                <label className="px-1 mb-2 text-xs font-semibold">
-                  Weight
-                </label>
+                <label className="px-1 mb-2 text-xs font-semibold">City</label>
                 <div className="flex mb-4">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
-                      <FontAwesomeIcon icon={faWeightScale} />
+                      <FontAwesomeIcon icon={faLocationDot} />
                     </i>
                   </div>
                   <input
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="80kg"
+                    placeholder="Dhahran"
                   />
                 </div>
                 <label className="px-1 mb-2 text-xs font-semibold">
-                  Blood Type
+                  Street
                 </label>
-                <RadioButtonSelector
-                  name="blood-type"
-                  options={radioButtonOptions}
-                />
+                <div className="flex mb-4">
+                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
+                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
+                      <FontAwesomeIcon icon={faRoad} />
+                    </i>
+                  </div>
+                  <input
+                    type="text"
+                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    placeholder="Abdullah Ibn Al Abbas Street"
+                  />
+                </div>
+                <label className="px-1 mb-2 text-xs font-semibold">
+                  Zip Code
+                </label>
+                <div className="flex mb-4">
+                  <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
+                    <i className="text-lg text-gray-400 mdi mdi-email-outline">
+                      <FontAwesomeIcon icon={faHashtag} />
+                    </i>
+                  </div>
+                  <input
+                    type="text"
+                    className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
+                    placeholder="32227"
+                  />
+                </div>
               </section>
             )}
 

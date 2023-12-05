@@ -14,13 +14,16 @@ interface MenuItem {
 
 interface MenuWithCheckboxProps {
   items: MenuItem[];
+  title: string;
 }
 
-export function MenuWithCheckbox({ items }: MenuWithCheckboxProps) {
+export function MenuWithCheckbox({ items, title }: MenuWithCheckboxProps) {
   return (
     <Menu dismiss={{ itemPress: false }}>
       <MenuHandler>
-        <Button>Menu</Button>
+        <Button className="text-sm tracking-wide normal-case bg-white text-[#212121]">
+          {title}
+        </Button>
       </MenuHandler>
       <MenuList>
         {items.map((item) => (
