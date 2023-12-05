@@ -347,12 +347,12 @@ const SignUp = () => {
                 <label className="px-1 mb-2 text-xs font-semibold">
                   Blood Type
                 </label>
-                <DefaultMenu items={bloodTypes} title="Blood Types" />
+                <DefaultMenu items={bloodTypes} />
 
                 <label className="px-1 mt-4 mb-2 text-xs font-semibold">
                   Diseases
                 </label>
-                <MenuWithCheckbox title="Diseases" items={diseaseItems} />
+                <MenuWithCheckbox items={diseaseItems} />
               </section>
             )}
 

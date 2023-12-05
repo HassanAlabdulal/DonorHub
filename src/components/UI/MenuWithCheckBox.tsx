@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import {
   Menu,
   MenuHandler,
@@ -14,16 +16,29 @@ interface MenuItem {
 
 interface MenuWithCheckboxProps {
   items: MenuItem[];
-  title: string;
 }
 
-export function MenuWithCheckbox({ items, title }: MenuWithCheckboxProps) {
+export function MenuWithCheckbox({ items }: MenuWithCheckboxProps) {
+  const [selectedItems, setSelectedItems] = useState(new Set<string>());
+
+  const handleCheckboxChange = (label: string, isChecked: boolean) => {
+    setSelectedItems((prevSelectedItems) => {
+      const newSelectedItems = new Set(prevSelectedItems);
+      if (isChecked) {
+        newSelectedItems.add(label);
+      } else {
+        newSelectedItems.delete(label);
+      }
+      return newSelectedItems;
+    });
+  };
+
+  const selectedItemsString = Array.from(selectedItems).join(", ");
+
   return (
     <Menu dismiss={{ itemPress: false }}>
       <MenuHandler>
-        <Button className="text-sm tracking-wide normal-case bg-white border border-[#121212] text-[#212121]">
-          {title}
-        </Button>
+        <Button>{selectedItemsString || "Diseases"}</Button>
       </MenuHandler>
       <MenuList>
         {items.map((item) => (
@@ -35,8 +50,10 @@ export function MenuWithCheckbox({ items, title }: MenuWithCheckboxProps) {
               <Checkbox
                 ripple={false}
                 id={item.id}
-                containerProps={{ className: "p-0" }}
-                className="hover:before:content-none"
+                onChange={(e) =>
+                  handleCheckboxChange(item.label, e.target.checked)
+                }
+                checked={selectedItems.has(item.label)}
                 crossOrigin={undefined}
               />
               {item.label}

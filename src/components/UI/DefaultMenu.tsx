@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import {
   Menu,
   MenuHandler,
@@ -13,10 +15,15 @@ interface DefaultMenuItem {
 
 interface DefaultMenuProps {
   items: DefaultMenuItem[];
-  title: string;
 }
 
-export function DefaultMenu({ items, title }: DefaultMenuProps) {
+export function DefaultMenu({ items }: DefaultMenuProps) {
+  const [selectedItem, setSelectedItem] = useState("");
+
+  const handleItemClick = (label: string) => {
+    setSelectedItem(label);
+  };
+
   return (
     <Menu
       animate={{
@@ -25,13 +32,13 @@ export function DefaultMenu({ items, title }: DefaultMenuProps) {
       }}
     >
       <MenuHandler>
-        <Button className="text-sm tracking-wide normal-case bg-white border border-[#121212] text-[#212121]">
-          {title}
-        </Button>
+        <Button>{selectedItem || "Blood Type"}</Button>
       </MenuHandler>
       <MenuList>
         {items.map((item) => (
-          <MenuItem key={item.id}>{item.label}</MenuItem>
+          <MenuItem key={item.id} onClick={() => handleItemClick(item.label)}>
+            {item.label}
+          </MenuItem>
         ))}
       </MenuList>
     </Menu>
