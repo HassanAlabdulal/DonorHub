@@ -26,11 +26,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // import { createSupabaseBrowser } from "../utils/supabase.ts";
-const radioButtonOptions: RadioButtonOption[] = [
-  { id: "blood-type-o", label: "O" },
-  { id: "blood-type-a", label: "A" },
-  { id: "blood-type-b", label: "B" },
-  { id: "blood-type-ab", label: "AB" },
+const bloodTypes = [
+  { id: "blood-type-o", label: "+O" },
+  { id: "blood-type-o", label: "-O" },
+  { id: "blood-type-a", label: "+A" },
+  { id: "blood-type-a", label: "-A" },
+  { id: "blood-type-b", label: "+B" },
+  { id: "blood-type-b", label: "-B" },
+  { id: "blood-type-ab", label: "+AB" },
+  { id: "blood-type-ab", label: "-AB" },
 ];
 
 const diseaseItems = [
@@ -347,13 +351,14 @@ const SignUp = () => {
                 <label className="px-1 mb-2 text-xs font-semibold">
                   Blood Type
                 </label>
-                <RadioButtonSelector
+                {/* <RadioButtonSelector
                   name="blood-type"
                   options={radioButtonOptions}
-                />
+                /> */}
+                <MenuWithCheckbox title="Blood Types" items={bloodTypes} />
 
                 <label className="px-1 mt-4 mb-2 text-xs font-semibold">
-                  Disease
+                  Diseases
                 </label>
                 <MenuWithCheckbox title="Diseases" items={diseaseItems} />
               </section>

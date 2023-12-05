@@ -21,7 +21,7 @@ export function MenuWithCheckbox({ items, title }: MenuWithCheckboxProps) {
   return (
     <Menu dismiss={{ itemPress: false }}>
       <MenuHandler>
-        <Button className="text-sm tracking-wide normal-case bg-white text-[#212121]">
+        <Button className="text-sm tracking-wide normal-case bg-white border border-[#121212] text-[#212121]">
           {title}
         </Button>
       </MenuHandler>
