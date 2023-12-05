@@ -10,15 +10,15 @@ export default function ForgotPassword() {
             <img src="src/assets/Forgot password.png" alt="Forgot Password" />
           </div>
 
-          <div className="w-full px-5 mt-24 py-36 md:w-1/2 md:px-10">
+          <div className="w-full px-5 py-36 md:w-1/2 md:px-10">
             <div className="mb-10 text-center">
-              <h1 className="mb-2 text-4xl font-bold text-red-700">
+              <h1 className="mb-2 text-4xl font-bold text-[#c03838]">
                 Forgot Password
               </h1>
               <p>Enter your email to reset your password</p>
             </div>
             <div>
-              <div className="flex mt-24 -mx-3">
+              <div className="flex mt-20 -mx-3">
                 <div className="w-full px-3 mb-5">
                   <label className="px-1 text-xs font-semibold">Email</label>
                   <div className="flex">

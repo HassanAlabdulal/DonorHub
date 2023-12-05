@@ -72,7 +72,7 @@ const NewPassword: React.FC = () => {
           </div>
           <div className="w-full px-5 py-36 md:w-1/2 md:px-10">
             <div className="mb-10 text-center">
-              <h1 className="mb-2 text-4xl font-bold text-red-700">
+              <h1 className="mb-2 text-4xl font-bold text-[#c03838]">
                 Set New Password
               </h1>
               <p>Please enter your new password</p>
