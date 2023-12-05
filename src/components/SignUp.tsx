@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Policy from "../components/Policy.tsx";
 import PasswordStrengthIndicator from "..//components/UI/PasswordStrengthIndicator";
 import { MenuWithCheckbox } from "../components/UI/MenuWithCheckBox";
@@ -62,6 +62,26 @@ const SignUp = () => {
   const [showConfirmPassword, setShowConfirmPassword] =
     useState<boolean>(false);
 
+  const [dateOfBirth, setDateOfBirth] = useState("");
+  const [age, setAge] = useState<number | "">(""); // This allows the age state to be a number or an empty string.
+
+  useEffect(() => {
+    if (dateOfBirth) {
+      const today = new Date();
+      const birthDate = new Date(dateOfBirth);
+      let age_now = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age_now--;
+      }
+      setAge(age_now); // age_now is a number, which matches the useState type.
+    }
+  }, [dateOfBirth]);
+
+  const getMaxDate = () => {
+    const today = new Date();
+    return today.toISOString().split("T")[0];
+  };
   const checkPasswordStrength = (password: string): number => {
     let strength = 0;
     if (password.length >= 8) strength += 1;
@@ -316,7 +336,8 @@ const SignUp = () => {
                 <h2 className="mb-8 text-3xl font-semibold ">
                   Health Information
                 </h2>
-                <label className="px-1 mb-2 text-xs font-semibold">Age</label>
+
+                {/* <label className="px-1 mb-2 text-xs font-semibold">Age</label>
                 <div className="flex mb-4">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
                     <i className="text-lg text-gray-400 mdi mdi-email-outline">
@@ -328,7 +349,42 @@ const SignUp = () => {
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
                     placeholder="21"
                   />
+                </div> */}
+
+                <div className="flex gap-4">
+                  <div className="flex-1">
+                    <label
+                      className="block text-sm font-medium text-gray-700"
+                      htmlFor="date-of-birth"
+                    >
+                      Date of Birth
+                    </label>
+                    <input
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-gray-200 rounded-md"
+                      id="date-of-birth"
+                      type="date"
+                      max={getMaxDate()} // Prevent future dates
+                      value={dateOfBirth}
+                      onChange={(e) => setDateOfBirth(e.target.value)}
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <label
+                      className="block text-sm font-medium text-gray-700"
+                      htmlFor="age"
+                    >
+                      Age
+                    </label>
+                    <input
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-gray-200 rounded-md"
+                      id="age"
+                      type="text"
+                      value={age}
+                      disabled
+                    />
+                  </div>
                 </div>
+
                 <label className="px-1 mb-2 text-xs font-semibold">
                   Weight
                 </label>
