@@ -32,7 +32,10 @@ export function DefaultMenu({ items }: DefaultMenuProps) {
       }}
     >
       <MenuHandler>
-        <Button>{selectedItem || "Blood Type"}</Button>
+        <Button className="text-sm tracking-wide normal-case bg-white border border-[#121212] text-[#212121]">
+          {" "}
+          {selectedItem || "Blood Type"}
+        </Button>
       </MenuHandler>
       <MenuList>
         {items.map((item) => (
