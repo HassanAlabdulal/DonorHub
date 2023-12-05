@@ -351,7 +351,7 @@ const SignUp = () => {
                   />
                 </div> */}
 
-                <div className="flex gap-4 mb-4">
+                <div className="flex items-end gap-4 mb-4">
                   <div className="flex-1">
                     <label
                       className="block px-1 mb-2 text-xs font-semibold"
@@ -368,20 +368,29 @@ const SignUp = () => {
                       onChange={(e) => setDateOfBirth(e.target.value)}
                     />
                   </div>
-                  <div className="flex-1">
+                  <div className="relative flex-1">
                     <label
                       className="block px-1 mb-2 text-xs font-semibold"
                       htmlFor="age"
                     >
                       Age
                     </label>
-                    <input
-                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-white rounded-md"
-                      id="age"
-                      type="text"
-                      value={age}
-                      disabled
-                    />
+                    <div className="relative flex items-center">
+                      {/* Icon container adjusted to match the weight input icon style */}
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-3">
+                        <FontAwesomeIcon
+                          icon={faCalendarDays}
+                          className="text-gray-400"
+                        />
+                      </div>
+                      <input
+                        className="block w-full px-3 py-2 pl-10 mt-1 bg-white border rounded-md" // Padding adjusted to make space for the icon
+                        id="age"
+                        type="text"
+                        value={age}
+                        disabled
+                      />
+                    </div>
                   </div>
                 </div>
 
