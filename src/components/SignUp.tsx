@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Policy from "../components/Policy.tsx";
 import PasswordStrengthIndicator from "..//components/UI/PasswordStrengthIndicator";
-
 import { MenuWithCheckbox } from "../components/UI/MenuWithCheckBox";
 import { DefaultMenu } from "../components/UI/DefaultMenu";
 
@@ -46,7 +45,6 @@ const diseaseItems = [
   { id: "disease8", label: "HIV/AIDS" },
   { id: "disease9", label: "Malaria" },
   { id: "disease10", label: "Nothing" },
-  // ... add more diseases as needed
 ];
 
 const ShowIcon = () => <FontAwesomeIcon icon={faEye} />;
