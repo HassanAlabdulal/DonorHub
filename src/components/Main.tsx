@@ -98,11 +98,9 @@ export default function Main() {
 
   const navigateToDonationEventDetails = (DonationEventId: number) => {
     // console.log(`Navigate to details of project with id: ${projectId}`);
-    window.location.href = "/ShowProjectPage";
+    window.location.href = "/ShowEventPage";
   };
 
-  // const [query, setQuery] = useState("");
-  // const [selectedSort, setSelectedSort] = useState();
   const [open, setOpen] = useState(false);
 
   return (
@@ -111,60 +109,8 @@ export default function Main() {
         <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#c03838] py-10">
           Donation Events
         </h1>
-        {/* <div className="flex flex-col gap-3">
-          <label
-            htmlFor="name"
-            className="text-center block text-xl font-bold font-nunito text-[#bfa260]"
-          >
-            Search Projects
-          </label>
-          <div className="flex flex-row items-center gap-2">
-            <div className="relative w-full">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                className="shadow-sm focus:ring-[#3e60a3] focus:border-[#3e60a3] block w-60 sm:w-80 md:w-96 h-12 text-base border-gray-300 pl-4 pr-14 rounded-full"
-                placeholder="Project"
-              />
-              <a
-                className="bg-[#5f7fbf] pt-2 pl-[10px] w-10 h-10 rounded-full absolute right-0 mr-1 -mt-11
-              transition-all duration-700 hover:bg-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl cursor-pointer"
-              >
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  size="lg"
-                  className="text-[#f7f7f7]"
-                />
-              </a>
-            </div>
-            <div>
-              <a
-                className="w-10 h-10 px-2 py-2 rounded-full border-2 border-[#5f7fbf] transition-all duration-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-400 cursor-pointer shadow-md hover:shadow-xl"
-                onClick={() => setOpen(true)}
-              >
-                <FontAwesomeIcon
-                  icon={faSliders}
-                  size="lg"
-                  className="text-[#5f7fbf]"
-                />
-              </a>
-            </div>
-          </div>
-          <a
-            href="UploadProjectPage"
-            className="flex select-none items-center cursor-pointer justify-center rounded-lg  bg-[#5f7fbf] border-2 border-[#5f7fbf] px-4 py-2 mt-3
-                                    text-base font-bold text-white align-middle transition-all duration-700 hover:bg-[#3e60a3] hover:border-[#3e60a3] focus:outline-none shadow-md hover:shadow-xl
-                                    disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none sm:mt-0 sm:w-auto"
-            type="button"
-            data-ripple-dark="true"
-            onClick={() => setOpen(false)}
-          >
-            Add Project
-          </a>
-        </div> */}
 
-        {/* Projects Section */}
+        {/* Events Section */}
         <ul
           role="list"
           className="grid grid-cols-1 gap-8 mx-8 sm:gap-12 sm:mx-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
