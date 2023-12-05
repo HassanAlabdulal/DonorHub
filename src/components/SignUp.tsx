@@ -74,7 +74,7 @@ const SignUp = () => {
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age_now--;
       }
-      setAge(age_now); // age_now is a number, which matches the useState type.
+      setAge(age_now);
     }
   }, [dateOfBirth]);
 
@@ -351,32 +351,32 @@ const SignUp = () => {
                   />
                 </div> */}
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 mb-4">
                   <div className="flex-1">
                     <label
-                      className="block text-sm font-medium text-gray-700"
+                      className="block px-1 mb-2 text-xs font-semibold"
                       htmlFor="date-of-birth"
                     >
                       Date of Birth
                     </label>
                     <input
-                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-gray-200 rounded-md"
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-white rounded-md"
                       id="date-of-birth"
                       type="date"
-                      max={getMaxDate()} // Prevent future dates
+                      max={getMaxDate()}
                       value={dateOfBirth}
                       onChange={(e) => setDateOfBirth(e.target.value)}
                     />
                   </div>
                   <div className="flex-1">
                     <label
-                      className="block text-sm font-medium text-gray-700"
+                      className="block px-1 mb-2 text-xs font-semibold"
                       htmlFor="age"
                     >
                       Age
                     </label>
                     <input
-                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-gray-200 rounded-md"
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 bg-white rounded-md"
                       id="age"
                       type="text"
                       value={age}
