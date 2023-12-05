@@ -452,7 +452,7 @@ const SignUp = () => {
                   />
                 </div>
                 <label className="px-1 mb-2 text-xs font-semibold">
-                  Zip Code
+                  Postal Code
                 </label>
                 <div className="flex mb-4">
                   <div className="z-10 flex items-center justify-center w-10 pl-1 text-center pointer-events-none">
