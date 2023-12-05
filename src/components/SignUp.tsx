@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Policy from "../components/Policy.tsx";
 import PasswordStrengthIndicator from "..//components/UI/PasswordStrengthIndicator";
-import RadioButtonSelector, {
-  type RadioButtonOption,
-} from "../components/UI/RadioButtonSelector";
+// import RadioButtonSelector, {
+//   type RadioButtonOption,
+// } from "../components/UI/RadioButtonSelector";
 
 import { MenuWithCheckbox } from "../components/UI/MenuWithCheckBox";
+import { DefaultMenu } from "../components/UI/DefaultMenu";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -355,7 +356,7 @@ const SignUp = () => {
                   name="blood-type"
                   options={radioButtonOptions}
                 /> */}
-                <MenuWithCheckbox title="Blood Types" items={bloodTypes} />
+                <DefaultMenu items={bloodTypes} title="Blood Types" />
 
                 <label className="px-1 mt-4 mb-2 text-xs font-semibold">
                   Diseases

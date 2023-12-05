@@ -25,7 +25,9 @@ export function DefaultMenu({ items, title }: DefaultMenuProps) {
       }}
     >
       <MenuHandler>
-        <Button>{title}</Button>
+        <Button className="text-sm tracking-wide normal-case bg-white border border-[#121212] text-[#212121]">
+          {title}
+        </Button>
       </MenuHandler>
       <MenuList>
         {items.map((item) => (
