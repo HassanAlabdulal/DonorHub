@@ -3,6 +3,7 @@ import Policy from "../components/Policy.tsx";
 import PasswordStrengthIndicator from "..//components/UI/PasswordStrengthIndicator";
 import { MenuWithCheckbox } from "../components/UI/MenuWithCheckBox";
 import { DefaultMenu } from "../components/UI/DefaultMenu";
+import RadioButtonSelector from "../components/UI/RadioButtonSelector";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,6 +33,11 @@ const bloodTypes = [
   { id: "blood-type-b", label: "-B" },
   { id: "blood-type-ab", label: "+AB" },
   { id: "blood-type-ab", label: "-AB" },
+];
+
+const userStatusOptions = [
+  { id: "option1", label: "Donor" },
+  { id: "option2", label: "Recepient" },
 ];
 
 const diseaseItems = [
@@ -164,11 +170,8 @@ const SignUp = () => {
       ></div>
       <div className="z-10 mx-auto mt-48 text-center">
         <h1 className="text-5xl font-semibold text-white">
-          Welcome to <span className="font-bold ">InspireHub</span>
+          Welcome to <span className="font-bold ">DonorHub</span>
         </h1>
-        <p className="mt-3 text-lg text-[#c03838]">
-          Become a new member in 5 easy steps
-        </p>
       </div>
       <div
         className={`z-10 w-full max-w-xl mx-auto mt-24 mb-24 overflow-hidden bg-[#f3f4f6] rounded-lg shadow-2xl ${
@@ -239,6 +242,15 @@ const SignUp = () => {
                     type="text"
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
                     placeholder="+996555555555"
+                  />
+                </div>
+                <label className="px-1 mt-3 mb-2 text-xs font-semibold">
+                  Status
+                </label>
+                <div className="flex">
+                  <RadioButtonSelector
+                    name="Status"
+                    options={userStatusOptions}
                   />
                 </div>
               </section>
