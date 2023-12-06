@@ -5,6 +5,7 @@ import { useState } from "react";
 type DonationEvent = {
   id: number;
   title: string;
+  startDate: string;
   endDate: string;
   location: string;
   description: string;
@@ -17,6 +18,7 @@ export default function Main() {
     {
       id: 1,
       title: "City Hall Blood Drive",
+      startDate: "2023-04-20",
       endDate: "2023-05-20",
       location: "City Hall Auditorium",
       description:
@@ -27,6 +29,7 @@ export default function Main() {
     {
       id: 2,
       title: "Healthcare Heroes Donation Campaign",
+      startDate: "2023-05-20",
       endDate: "2023-06-12",
       location: "Local Hospital Conference Room",
       description:
@@ -37,6 +40,7 @@ export default function Main() {
     {
       id: 3,
       title: "Summer College Blood Drive",
+      startDate: "2023-06-20",
       endDate: "2023-07-15",
       location: "University Commons Area",
       description:
@@ -47,6 +51,7 @@ export default function Main() {
     {
       id: 4,
       title: "Neighborhood Heroes Blood Drive",
+      startDate: "2023-07-20",
       endDate: "2023-08-22",
       location: "Neighborhood Rec Center",
       description:
@@ -57,6 +62,7 @@ export default function Main() {
     {
       id: 5,
       title: "Corporate Giving Blood Drive",
+      startDate: "2023-08-20",
       endDate: "2023-09-30",
       location: "Corporate HQ Courtyard",
       description:
@@ -67,6 +73,7 @@ export default function Main() {
     {
       id: 6,
       title: "Athletes for Life Blood Drive",
+      startDate: "2023-09-20",
       endDate: "2023-10-20",
       location: "City Sports Arena",
       description:
@@ -77,6 +84,7 @@ export default function Main() {
     {
       id: 7,
       title: "Hometown Heroes Blood Drive",
+      startDate: "2023-10-20",
       endDate: "2023-11-11",
       location: "Central Fire Station",
       description:
@@ -87,6 +95,7 @@ export default function Main() {
     {
       id: 8,
       title: "Holiday Season Blood Drive",
+      startDate: "2023-11-20",
       endDate: "2023-12-15",
       location: "Downtown Convention Center",
       description:
@@ -134,8 +143,19 @@ export default function Main() {
                   <dt className="sr-only">location</dt>
                   <dd className="text-sm text-gray-500">
                     by{" "}
-                    <em className="text-gray-600">{DonationEvent.location}</em>{" "}
-                    on {DonationEvent.endDate}
+                    <em className="text-gray-600">{DonationEvent.location}</em>
+                  </dd>
+                  <dd className="text-xs text-gray-500">
+                    from{" "}
+                    <em className="p-1 text-gray-600 border border-gray-300 rounded">
+                      {DonationEvent.startDate}
+                    </em>
+                    {"  "}
+                    to
+                    {"  "}
+                    <em className="p-1 text-gray-600 border border-gray-300 rounded">
+                      {DonationEvent.endDate}
+                    </em>
                   </dd>
                   <dt className="sr-only">Description</dt>
                   <dd className="text-[#121212] text-sm line-clamp-2">
