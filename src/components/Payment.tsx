@@ -264,18 +264,10 @@ export default function Payment() {
                     }}
                     menuProps={{ className: "h-48" }}
                   >
-                    {/* {countries.map(({ name, flags }: any) => (
-                      <Option key={name} value={name}>
-                        <div className="flex items-center gap-x-2">
-                          <img
-                            src={flags.svg}
-                            alt={name}
-                            className="object-cover w-4 h-4 rounded-full"
-                          />
-                          {name}
-                        </div>
-                      </Option>
-                    ))} */}
+                    {/* Example Option components */}
+                    <Option value="option1">Option 1</Option>
+                    <Option value="option2">Option 2</Option>
+                    {/* Continue adding Option components as needed */}
                   </Select>
                   <Typography
                     variant="small"
