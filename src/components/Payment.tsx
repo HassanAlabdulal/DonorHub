@@ -54,252 +54,255 @@ export default function Payment() {
   const [cardExpires, setCardExpires] = React.useState("");
 
   return (
-    <Card className="w-full max-w-[24rem]">
-      <CardHeader
-        color="gray"
-        floated={false}
-        shadow={false}
-        className="grid px-4 py-8 m-0 text-center place-items-center"
-      >
-        <div className="h-20 p-6 mb-4 text-white">
-          {type === "card" ? (
-            <CreditCardIcon className="w-10 h-10 text-white" />
-          ) : (
-            <img
-              alt="paypal "
-              className="w-14 "
-              src="https://docs.material-tailwind.com/icons/paypall.png"
-            />
-          )}
-        </div>
-        <Typography variant="h5" color="white">
-          Material Tailwind PRO
-        </Typography>
-      </CardHeader>
-      <CardBody>
-        <Tabs value={type} className="overflow-visible">
-          <TabsHeader className="relative z-0 ">
-            <Tab value="card" onClick={() => setType("card")}>
-              Pay with Card
-            </Tab>
-            <Tab value="paypal" onClick={() => setType("paypal")}>
-              Pay with PayPal
-            </Tab>
-          </TabsHeader>
-          <TabsBody
-            className="!overflow-x-hidden !overflow-y-visible"
-            animate={{
-              initial: {
-                x: type === "card" ? 400 : -400,
-              },
-              mount: {
-                x: 0,
-              },
-              unmount: {
-                x: type === "card" ? 400 : -400,
-              },
-            }}
-          >
-            <TabPanel value="card" className="p-0">
-              <form className="flex flex-col gap-4 mt-12">
-                <div>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="mb-2 font-medium"
-                  >
-                    Your Email
-                  </Typography>
-                  <Input
-                    type="email"
-                    placeholder="name@mail.com"
-                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                    labelProps={{
-                      className: "before:content-none after:content-none",
-                    }}
-                    crossOrigin={undefined}
-                  />
-                </div>
-
-                <div className="my-3">
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="mb-2 font-medium "
-                  >
-                    Card Details
-                  </Typography>
-
-                  <Input
-                    maxLength={19}
-                    value={formatCardNumber(cardNumber)}
-                    onChange={(event) => setCardNumber(event.target.value)}
-                    icon={
-                      <CreditCardIcon className="absolute left-0 w-4 h-4 text-blue-gray-300" />
-                    }
-                    placeholder="0000 0000 0000 0000"
-                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                    labelProps={{
-                      className: "before:content-none after:content-none",
-                    }}
-                    crossOrigin={undefined}
-                  />
-                  <div className="flex items-center gap-4 my-4">
-                    <div>
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="mb-2 font-medium"
-                      >
-                        Expires
-                      </Typography>
-                      <Input
-                        maxLength={5}
-                        value={formatExpires(cardExpires)}
-                        onChange={(event) => setCardExpires(event.target.value)}
-                        containerProps={{ className: "min-w-[72px]" }}
-                        placeholder="00/00"
-                        className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                        labelProps={{
-                          className: "before:content-none after:content-none",
-                        }}
-                        crossOrigin={undefined}
-                      />
-                    </div>
-                    <div>
-                      <Typography
-                        variant="small"
-                        color="blue-gray"
-                        className="mb-2 font-medium"
-                      >
-                        CVC
-                      </Typography>
-                      <Input
-                        maxLength={4}
-                        containerProps={{ className: "min-w-[72px]" }}
-                        placeholder="000"
-                        className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                        labelProps={{
-                          className: "before:content-none after:content-none",
-                        }}
-                        crossOrigin={undefined}
-                      />
-                    </div>
+    <div className="flex items-center justify-center w-full h-screen">
+      <Card className="w-full max-w-[26rem]">
+        <CardHeader
+          color="gray"
+          floated={false}
+          shadow={false}
+          className="grid px-4 py-8 m-0 text-center place-items-center"
+        >
+          <div className="h-20 p-6 mb-4 text-white">
+            {type === "card" ? (
+              <CreditCardIcon className="w-10 h-10 text-white" />
+            ) : (
+              <img
+                alt="paypal "
+                className="w-14 "
+                src="https://docs.material-tailwind.com/icons/paypall.png"
+              />
+            )}
+          </div>
+          <Typography variant="h5" color="white">
+            Material Tailwind PRO
+          </Typography>
+        </CardHeader>
+        <CardBody>
+          <Tabs value={type} className="overflow-visible">
+            <TabsHeader className="relative z-0 ">
+              <Tab value="card" onClick={() => setType("card")}>
+                Pay with Card
+              </Tab>
+              <Tab value="paypal" onClick={() => setType("paypal")}>
+                Pay with PayPal
+              </Tab>
+            </TabsHeader>
+            <TabsBody
+              className="!overflow-x-hidden !overflow-y-visible"
+              animate={{
+                initial: {
+                  x: type === "card" ? 400 : -400,
+                },
+                mount: {
+                  x: 0,
+                },
+                unmount: {
+                  x: type === "card" ? 400 : -400,
+                },
+              }}
+            >
+              <TabPanel value="card" className="p-0">
+                <form className="flex flex-col gap-4 mt-12">
+                  <div>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="mb-2 font-medium"
+                    >
+                      Your Email
+                    </Typography>
+                    <Input
+                      type="email"
+                      placeholder="name@mail.com"
+                      className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      labelProps={{
+                        className: "before:content-none after:content-none",
+                      }}
+                      crossOrigin={undefined}
+                    />
                   </div>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="mb-2 font-medium"
-                  >
-                    Holder Name
-                  </Typography>
-                  <Input
-                    placeholder="name@mail.com"
-                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                    labelProps={{
-                      className: "before:content-none after:content-none",
-                    }}
-                    crossOrigin={undefined}
-                  />
-                </div>
-                <Button size="lg">Pay Now</Button>
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center justify-center gap-2 mt-2 font-medium opacity-60"
-                >
-                  <LockClosedIcon className="-mt-0.5 h-4 w-4" /> Payments are
-                  secure and encrypted
-                </Typography>
-              </form>
-            </TabPanel>
-            <TabPanel value="paypal" className="p-0">
-              <form className="flex flex-col gap-4 mt-12">
-                <div>
-                  <Typography
-                    variant="paragraph"
-                    color="blue-gray"
-                    className="mb-4 font-medium"
-                  >
-                    Personal Details
-                  </Typography>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="mb-2 font-medium"
-                  >
-                    Your Email
-                  </Typography>
-                  <Input
-                    type="email"
-                    placeholder="name@mail.com"
-                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                    labelProps={{
-                      className: "before:content-none after:content-none",
-                    }}
-                    crossOrigin={undefined}
-                  />
-                </div>
 
-                <div className="my-6">
-                  <Typography
-                    variant="paragraph"
-                    color="blue-gray"
-                    className="mb-4 font-medium"
-                  >
-                    Billing Address
-                  </Typography>
+                  <div className="my-3">
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="mb-2 font-medium "
+                    >
+                      Card Details
+                    </Typography>
+
+                    <Input
+                      maxLength={19}
+                      value={formatCardNumber(cardNumber)}
+                      onChange={(event) => setCardNumber(event.target.value)}
+                      icon={
+                        <CreditCardIcon className="absolute left-0 w-4 h-4 text-blue-gray-300" />
+                      }
+                      placeholder="0000 0000 0000 0000"
+                      className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      labelProps={{
+                        className: "before:content-none after:content-none",
+                      }}
+                      crossOrigin={undefined}
+                    />
+                    <div className="flex items-center gap-4 my-4">
+                      <div>
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="mb-2 font-medium"
+                        >
+                          Expires
+                        </Typography>
+                        <Input
+                          maxLength={5}
+                          value={formatExpires(cardExpires)}
+                          onChange={(event) =>
+                            setCardExpires(event.target.value)
+                          }
+                          containerProps={{ className: "min-w-[72px]" }}
+                          placeholder="00/00"
+                          className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                          labelProps={{
+                            className: "before:content-none after:content-none",
+                          }}
+                          crossOrigin={undefined}
+                        />
+                      </div>
+                      <div>
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="mb-2 font-medium"
+                        >
+                          CVC
+                        </Typography>
+                        <Input
+                          maxLength={4}
+                          containerProps={{ className: "min-w-[72px]" }}
+                          placeholder="000"
+                          className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                          labelProps={{
+                            className: "before:content-none after:content-none",
+                          }}
+                          crossOrigin={undefined}
+                        />
+                      </div>
+                    </div>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="mb-2 font-medium"
+                    >
+                      Holder Name
+                    </Typography>
+                    <Input
+                      placeholder="name@mail.com"
+                      className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      labelProps={{
+                        className: "before:content-none after:content-none",
+                      }}
+                      crossOrigin={undefined}
+                    />
+                  </div>
+                  <Button size="lg">Pay Now</Button>
                   <Typography
                     variant="small"
-                    color="blue-gray"
-                    className="mb-2 font-medium"
+                    color="gray"
+                    className="flex items-center justify-center gap-2 mt-2 font-medium opacity-60"
                   >
-                    Country
+                    <LockClosedIcon className="-mt-0.5 h-4 w-4" /> Payments are
+                    secure and encrypted
                   </Typography>
-                  <Select
-                    placeholder="USA"
-                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                    labelProps={{
-                      className: "before:content-none after:content-none",
-                    }}
-                    menuProps={{ className: "h-48" }}
-                  >
-                    {/* Example Option components */}
-                    <Option value="option1">Option 1</Option>
-                    <Option value="option2">Option 2</Option>
-                    {/* Continue adding Option components as needed */}
-                  </Select>
+                </form>
+              </TabPanel>
+              <TabPanel value="paypal" className="p-0">
+                <form className="flex flex-col gap-4 mt-12">
+                  <div>
+                    <Typography
+                      variant="paragraph"
+                      color="blue-gray"
+                      className="mb-4 font-medium"
+                    >
+                      Personal Details
+                    </Typography>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="mb-2 font-medium"
+                    >
+                      Your Email
+                    </Typography>
+                    <Input
+                      type="email"
+                      placeholder="name@mail.com"
+                      className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      labelProps={{
+                        className: "before:content-none after:content-none",
+                      }}
+                      crossOrigin={undefined}
+                    />
+                  </div>
+
+                  <div className="my-6">
+                    <Typography
+                      variant="paragraph"
+                      color="blue-gray"
+                      className="mb-4 font-medium"
+                    >
+                      Billing Address
+                    </Typography>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="mb-2 font-medium"
+                    >
+                      Country
+                    </Typography>
+                    <Select
+                      placeholder="KSA"
+                      className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      labelProps={{
+                        className: "before:content-none after:content-none",
+                      }}
+                      menuProps={{ className: "h-48" }}
+                    >
+                      {/* Example Option components */}
+                      <Option value="option1">Saudi Arabia</Option>
+                      <Option value="option2">Bahrain</Option>
+                    </Select>
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="mt-4 -mb-2 font-medium"
+                    >
+                      Postal Code
+                    </Typography>
+                    <Input
+                      placeholder="0000"
+                      className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                      labelProps={{
+                        className: "before:content-none after:content-none",
+                      }}
+                      containerProps={{ className: "mt-4" }}
+                      crossOrigin={undefined}
+                    />
+                  </div>
+                  <Button size="lg">pay with paypal</Button>
                   <Typography
                     variant="small"
-                    color="blue-gray"
-                    className="mt-4 -mb-2 font-medium"
+                    color="gray"
+                    className="flex items-center justify-center gap-2 font-medium opacity-60"
                   >
-                    Postal Code
+                    <LockClosedIcon className="-mt-0.5 h-4 w-4" /> Payments are
+                    secure and encrypted
                   </Typography>
-                  <Input
-                    placeholder="0000"
-                    className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-                    labelProps={{
-                      className: "before:content-none after:content-none",
-                    }}
-                    containerProps={{ className: "mt-4" }}
-                    crossOrigin={undefined}
-                  />
-                </div>
-                <Button size="lg">pay with paypal</Button>
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center justify-center gap-2 font-medium opacity-60"
-                >
-                  <LockClosedIcon className="-mt-0.5 h-4 w-4" /> Payments are
-                  secure and encrypted
-                </Typography>
-              </form>
-            </TabPanel>
-          </TabsBody>
-        </Tabs>
-      </CardBody>
-    </Card>
+                </form>
+              </TabPanel>
+            </TabsBody>
+          </Tabs>
+        </CardBody>
+      </Card>
+    </div>
   );
 }
