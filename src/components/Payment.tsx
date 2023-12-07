@@ -88,7 +88,7 @@ export default function Payment() {
               </Tab>
             </TabsHeader>
             <TabsBody
-              className="!overflow-x-hidden !overflow-y-visible"
+              className="overflow-hidden !overflow-x-hidden !overflow-y-hidden"
               animate={{
                 initial: {
                   x: type === "card" ? 400 : -400,
