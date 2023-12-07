@@ -74,7 +74,7 @@ export default function Payment() {
             )}
           </div>
           <Typography variant="h5" color="white">
-            Material Tailwind PRO
+            Payment Form
           </Typography>
         </CardHeader>
         <CardBody>
@@ -197,7 +197,7 @@ export default function Payment() {
                       Holder Name
                     </Typography>
                     <Input
-                      placeholder="name@mail.com"
+                      placeholder="HASSAN ALABDULAL"
                       className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                       labelProps={{
                         className: "before:content-none after:content-none",
@@ -270,6 +270,9 @@ export default function Payment() {
                       {/* Example Option components */}
                       <Option value="option1">Saudi Arabia</Option>
                       <Option value="option2">Bahrain</Option>
+                      <Option value="option3">Qatar</Option>
+                      <Option value="option4">Oman</Option>
+                      <Option value="option5">United Arab Emirates</Option>
                     </Select>
                     <Typography
                       variant="small"
