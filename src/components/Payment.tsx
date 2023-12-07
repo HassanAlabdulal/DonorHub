@@ -1,5 +1,5 @@
 import React from "react";
-import { useCountries } from "use-react-countries";
+// import { useCountries } from "use-react-countries";
 import {
   Card,
   CardHeader,
@@ -48,7 +48,7 @@ function formatExpires(value: string) {
 }
 
 export default function Payment() {
-  const { countries } = useCountries();
+  //   const { countries } = useCountries();
   const [type, setType] = React.useState("card");
   const [cardNumber, setCardNumber] = React.useState("");
   const [cardExpires, setCardExpires] = React.useState("");
@@ -264,7 +264,7 @@ export default function Payment() {
                     }}
                     menuProps={{ className: "h-48" }}
                   >
-                    {countries.map(({ name, flags }: any) => (
+                    {/* {countries.map(({ name, flags }: any) => (
                       <Option key={name} value={name}>
                         <div className="flex items-center gap-x-2">
                           <img
@@ -275,7 +275,7 @@ export default function Payment() {
                           {name}
                         </div>
                       </Option>
-                    ))}
+                    ))} */}
                   </Select>
                   <Typography
                     variant="small"
