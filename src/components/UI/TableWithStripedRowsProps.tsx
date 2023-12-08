@@ -1,8 +1,9 @@
 import { Card, Typography } from "@material-tailwind/react";
 
+// Updated props interface
 interface TableWithStripedRowsProps {
   headers: string[];
-  rows: Array<{ ID: string; Name: string; ReceivedDate: string }>;
+  rows: Array<Record<string, string>>; // A more generic type for rows
 }
 
 export default function TableWithStripedRows({
@@ -22,7 +23,7 @@ export default function TableWithStripedRows({
                 <Typography
                   variant="small"
                   color="white"
-                  className="font-bold leading-none "
+                  className="font-bold leading-none"
                 >
                   {header}
                 </Typography>
@@ -31,35 +32,19 @@ export default function TableWithStripedRows({
           </tr>
         </thead>
         <tbody>
-          {rows.map(({ ID, Name, ReceivedDate }) => (
-            <tr key={ID} className="even:bg-blue-gray-50/50">
-              <td className="p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal"
-                >
-                  {ID}
-                </Typography>
-              </td>
-              <td className="p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal"
-                >
-                  {Name}
-                </Typography>
-              </td>
-              <td className="p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal"
-                >
-                  {ReceivedDate}
-                </Typography>
-              </td>
+          {rows.map((row, index) => (
+            <tr key={index} className="even:bg-blue-gray-50/50">
+              {Object.values(row).map((value, cellIndex) => (
+                <td key={cellIndex} className="p-4">
+                  <Typography
+                    variant="small"
+                    color="blue-gray"
+                    className="font-normal"
+                  >
+                    {value}
+                  </Typography>
+                </td>
+              ))}
             </tr>
           ))}
         </tbody>
