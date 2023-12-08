@@ -10,14 +10,14 @@ export default function BloodDonationsReport() {
       </div>
       <div className="w-2/3">
         <TableWithStripedRows
-          headers={["Blood Type", "Available Amount"]}
+          headers={["Blood Type", "Available Amount (Liters)"]}
           rows={[
-            { type: "A+", bloodAmount: "Hassan" },
-            { type: "A-", bloodAmount: "Ali" },
-            { type: "AB+", bloodAmount: "Hussain" },
-            { type: "AB-", bloodAmount: "Abdullah" },
-            { type: "O+", bloodAmount: "Lutfi" },
-            { type: "0-", bloodAmount: "Lutfi" },
+            { type: "A+", bloodAmount: "37.5" },
+            { type: "A-", bloodAmount: "20.2" },
+            { type: "AB+", bloodAmount: "15.3" },
+            { type: "AB-", bloodAmount: "9.8" },
+            { type: "O+", bloodAmount: "45.0" },
+            { type: "O-", bloodAmount: "22.7" },
           ]}
         />
       </div>
