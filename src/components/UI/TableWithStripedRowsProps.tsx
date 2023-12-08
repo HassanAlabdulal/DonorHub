@@ -1,9 +1,8 @@
 import { Card, Typography } from "@material-tailwind/react";
 
-// Updated props interface
 interface TableWithStripedRowsProps {
   headers: string[];
-  rows: Array<Record<string, string>>; // A more generic type for rows
+  rows: Array<Record<string, string>>;
 }
 
 export default function TableWithStripedRows({
