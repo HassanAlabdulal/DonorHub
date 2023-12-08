@@ -1,6 +1,6 @@
 import TableWithStripedRows from "./UI/TableWithStripedRowsProps";
 
-export default function BloodDonationsReport() {
+export default function PaymentsReport() {
   return (
     <main className="bg-[#f7f7f7] min-h-screen w-full flex flex-col items-center justify-center">
       <div className="mb-24">
