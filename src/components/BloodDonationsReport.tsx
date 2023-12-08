@@ -1,91 +1,29 @@
-import { Card, Typography } from "@material-tailwind/react";
+import TableWithStripedRows from "./UI/TableWithStripedRowsProps";
 
-const TABLE_HEAD = ["Name", "Job", "Employed", ""];
-
-const TABLE_ROWS = [
-  {
-    name: "John Michael",
-    job: "Manager",
-    date: "23/04/18",
-  },
-  {
-    name: "Alexa Liras",
-    job: "Developer",
-    date: "23/04/18",
-  },
-  {
-    name: "Laurent Perrier",
-    job: "Executive",
-    date: "19/09/17",
-  },
-  {
-    name: "Michael Levi",
-    job: "Developer",
-    date: "24/12/08",
-  },
-  {
-    name: "Richard Gran",
-    job: "Manager",
-    date: "04/10/21",
-  },
-];
-
-export default function TableWithStripedRows() {
+export default function BloodDonationsReport() {
   return (
-    <Card className="w-full h-full overflow-scroll">
-      <table className="w-full text-left table-auto min-w-max">
-        <thead>
-          <tr>
-            {TABLE_HEAD.map((head) => (
-              <th
-                key={head}
-                className="p-4 border-b border-blue-gray-100 bg-blue-gray-50"
-              >
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
-                >
-                  {head}
-                </Typography>
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {TABLE_ROWS.map(({ name, job, date }, index) => (
-            <tr key={name} className="even:bg-blue-gray-50/50">
-              <td className="p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal"
-                >
-                  {name}
-                </Typography>
-              </td>
-              <td className="p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal"
-                >
-                  {job}
-                </Typography>
-              </td>
-              <td className="p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal"
-                >
-                  {date}
-                </Typography>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </Card>
+    <main className="bg-[#f7f7f7] min-h-screen w-full flex flex-col items-center justify-center">
+      <div className="mb-24">
+        <h1 className=" tracking-tight text-center font-roboto text-[#121212] mb-8 text-4xl font-extrabold leading-tight lg:text-5xl ">
+          All blood donations received in the last month
+        </h1>
+      </div>
+      <div className="w-2/3">
+        <TableWithStripedRows
+          headers={["ID", "Name", "Received Date"]}
+          rows={[
+            { ID: "123456789", Name: "Hassan", ReceivedDate: "02/01/2023" },
+            { ID: "112345678", Name: "Ali", ReceivedDate: "14/01/2023" },
+            { ID: "123456567", Name: "Hussain", ReceivedDate: "08/01/2023" },
+            { ID: "312341234", Name: "Abdullah", ReceivedDate: "06/01/2023" },
+            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
+            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
+            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
+            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
+            // ... other rows
+          ]}
+        />
+      </div>
+    </main>
   );
 }

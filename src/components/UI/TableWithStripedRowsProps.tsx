@@ -3,7 +3,7 @@ import { Card, Typography } from "@material-tailwind/react";
 // Define the structure of the props
 interface TableWithStripedRowsProps {
   headers: string[];
-  rows: Array<{ name: string; job: string; date: string }>;
+  rows: Array<{ ID: string; Name: string; ReceivedDate: string }>;
 }
 
 // Modify the component to accept props
@@ -13,18 +13,18 @@ export default function TableWithStripedRows({
 }: TableWithStripedRowsProps) {
   return (
     <Card className="w-full h-full overflow-scroll">
-      <table className="w-full text-left table-auto min-w-max">
+      <table className="w-full text-center table-auto min-w-max">
         <thead>
           <tr>
             {headers.map((header) => (
               <th
                 key={header}
-                className="p-4 border-b border-blue-gray-100 bg-blue-gray-50"
+                className="p-4 bg-black border-b border-blue-gray-100"
               >
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="white"
+                  className="font-bold leading-none "
                 >
                   {header}
                 </Typography>
@@ -33,15 +33,15 @@ export default function TableWithStripedRows({
           </tr>
         </thead>
         <tbody>
-          {rows.map(({ name, job, date }) => (
-            <tr key={name} className="even:bg-blue-gray-50/50">
+          {rows.map(({ ID, Name, ReceivedDate }) => (
+            <tr key={ID} className="even:bg-blue-gray-50/50">
               <td className="p-4">
                 <Typography
                   variant="small"
                   color="blue-gray"
                   className="font-normal"
                 >
-                  {name}
+                  {ID}
                 </Typography>
               </td>
               <td className="p-4">
@@ -50,7 +50,7 @@ export default function TableWithStripedRows({
                   color="blue-gray"
                   className="font-normal"
                 >
-                  {job}
+                  {Name}
                 </Typography>
               </td>
               <td className="p-4">
@@ -59,7 +59,7 @@ export default function TableWithStripedRows({
                   color="blue-gray"
                   className="font-normal"
                 >
-                  {date}
+                  {ReceivedDate}
                 </Typography>
               </td>
             </tr>
