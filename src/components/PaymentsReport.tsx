@@ -12,7 +12,7 @@ export default function PaymentsReport() {
         <TableWithStripedRows
           headers={[
             "Payment ID",
-            "Payer Name",
+            "Recipient Name",
             "Amount (USD)",
             "Confirmation Date",
           ]}
