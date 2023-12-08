@@ -47,7 +47,6 @@ export default function PaymentsReport() {
               Amount: "500.00",
               ConfirmationDate: "2023-02-20",
             },
-            // ... other confirmed payments
           ]}
         />
       </div>

@@ -32,7 +32,10 @@ export default function TableWithStripedRows({
         </thead>
         <tbody>
           {rows.map((row, index) => (
-            <tr key={index} className="even:bg-blue-gray-50/50">
+            <tr
+              key={index}
+              className="transition-all duration-200 even:bg-blue-gray-50/50 hover:bg-blue-gray-100"
+            >
               {Object.values(row).map((value, cellIndex) => (
                 <td key={cellIndex} className="p-4">
                   <Typography
