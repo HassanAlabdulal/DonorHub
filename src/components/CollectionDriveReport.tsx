@@ -5,21 +5,24 @@ export default function BloodDonationsReport() {
     <main className="bg-[#f7f7f7] min-h-screen w-full flex flex-col items-center justify-center">
       <div className="mb-24">
         <h1 className=" tracking-tight text-center font-roboto text-[#121212] mb-8 text-4xl font-extrabold leading-tight lg:text-5xl ">
-          All blood donations received in the last month
+          Total blood collected during each drive
         </h1>
       </div>
       <div className="w-2/3">
         <TableWithStripedRows
-          headers={["ID", "Name", "Received Date"]}
+          headers={["Collection Drive", "Total Blood (Liters)"]}
           rows={[
-            { ID: "123456789", Name: "Hassan", ReceivedDate: "02/01/2023" },
-            { ID: "112345678", Name: "Ali", ReceivedDate: "14/01/2023" },
-            { ID: "123456567", Name: "Hussain", ReceivedDate: "08/01/2023" },
-            { ID: "312341234", Name: "Abdullah", ReceivedDate: "06/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
+            { type: "City Hall Blood Drive", bloodAmount: "75.0" },
+            {
+              type: "Healthcare Heroes Donation Campaign",
+              bloodAmount: "62.4",
+            },
+            { type: "Summer College Blood Drive", bloodAmount: "88.3" },
+            { type: "Neighborhood Heroes Blood Drive", bloodAmount: "46.5" },
+            { type: "Corporate Giving Blood Drive", bloodAmount: "110.0" },
+            { type: "Athletes for Life Blood Drive", bloodAmount: "53.2" },
+            { type: "Hometown Heroes Blood Drive", bloodAmount: "48.1" },
+            { type: "Holiday Season Blood Drive", bloodAmount: "67.9" },
           ]}
         />
       </div>
