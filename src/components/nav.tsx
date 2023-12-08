@@ -109,7 +109,7 @@ export default function Nav() {
         animate={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -15 }}
         transition={{ delay: 0.35 }}
-        className="flex hidden gap-3 lg:flex lg:items-center lg:justify-center lg:text-sm lg:block"
+        className="hidden gap-3 lg:flex lg:items-center lg:justify-center lg:text-sm "
       >
         <a
           href="SignUpPage"
