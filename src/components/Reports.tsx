@@ -27,7 +27,7 @@ export default function Reports() {
           </a>
         </div>
         <div className="min-w-[16rem] min-h-[24rem]">
-          <a href="#" className={cardClass}>
+          <a href="CollectionDriveReportPage" className={cardClass}>
             <h5 className="mb-2 text-2xl font-semibold text-gray-700">
               Collection Drive
             </h5>
