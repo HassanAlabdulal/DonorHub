@@ -10,16 +10,14 @@ export default function BloodDonationsReport() {
       </div>
       <div className="w-2/3">
         <TableWithStripedRows
-          headers={["ID", "Name", "Received Date"]}
+          headers={["Blood Type", "Available Amount"]}
           rows={[
-            { ID: "123456789", Name: "Hassan", ReceivedDate: "02/01/2023" },
-            { ID: "112345678", Name: "Ali", ReceivedDate: "14/01/2023" },
-            { ID: "123456567", Name: "Hussain", ReceivedDate: "08/01/2023" },
-            { ID: "312341234", Name: "Abdullah", ReceivedDate: "06/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
+            { type: "A+", bloodAmount: "Hassan" },
+            { type: "A-", bloodAmount: "Ali" },
+            { type: "AB+", bloodAmount: "Hussain" },
+            { type: "AB-", bloodAmount: "Abdullah" },
+            { type: "O+", bloodAmount: "Lutfi" },
+            { type: "0-", bloodAmount: "Lutfi" },
           ]}
         />
       </div>
