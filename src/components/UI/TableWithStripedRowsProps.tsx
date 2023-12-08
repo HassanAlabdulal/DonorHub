@@ -1,12 +1,10 @@
 import { Card, Typography } from "@material-tailwind/react";
 
-// Define the structure of the props
 interface TableWithStripedRowsProps {
   headers: string[];
   rows: Array<{ ID: string; Name: string; ReceivedDate: string }>;
 }
 
-// Modify the component to accept props
 export default function TableWithStripedRows({
   headers,
   rows,

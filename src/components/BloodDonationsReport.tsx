@@ -20,7 +20,6 @@ export default function BloodDonationsReport() {
             { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
             { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
             { ID: "231234123", Name: "Lutfi", ReceivedDate: "16/01/2023" },
-            // ... other rows
           ]}
         />
       </div>
