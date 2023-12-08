@@ -7,7 +7,7 @@ export default function Reports() {
     <section className="flex items-center justify-center w-full min-h-screen px-4 bg-[#f7f7f7] md:px-10">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-2 md:gap-x-8 md:gap-y-12">
         <div className="min-w-[16rem] min-h-[24rem]">
-          <a href="#" className={cardClass}>
+          <a href="BloodDonationsReportPage" className={cardClass}>
             <h5 className="mb-2 text-2xl font-semibold text-gray-700 ">
               Blood Donations
             </h5>
