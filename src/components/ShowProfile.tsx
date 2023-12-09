@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import OperationsHistory from "./OperationsHistory";
 
+const sampleDataFromBackend = [
+  { type: "Donate", toFrom: "Ali Alabdulal", date: "22/11/2023" },
+  { type: "Donate", toFrom: "Hassan Alabdulal", date: "02/09/2021" },
+  { type: "Recipient", toFrom: "Abdullah Al Matawah", date: "17/12/2020" },
+];
+
 export default function ShowProfile() {
   // Example user profile data
   const userProfile = {
@@ -149,23 +155,25 @@ export default function ShowProfile() {
               )}
             </div>
 
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center mt-3">
               {" "}
               {/* Flex container with column direction */}
               {/* Update Profile Button */}
               <a
-                className="bg-[#5f7fbf] text-white font-bold py-2 px-4 rounded cursor-pointer hover:bg-[#3e60a3] transition-all duration-700 min-w-[170px] text-center"
+                className=" cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-9 py-2.5
+                text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+                  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 href="EditProfileUserPage"
               >
-                Update Profile
+                Edit Profile
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex items-start justify-start w-full -mb-56 h-1/2">
-        <OperationsHistory />
+      <div className="flex items-start w-full -mb-56 h-1/2">
+        <OperationsHistory data={sampleDataFromBackend} />
       </div>
     </div>
   );

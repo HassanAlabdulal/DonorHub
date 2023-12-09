@@ -168,7 +168,9 @@ export default function ProcessRequest() {
           <div className="flex items-center justify-center">
             <button
               type="submit"
-              className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className=" cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-9 py-2.5
+              text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+                disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             >
               Submit
             </button>
