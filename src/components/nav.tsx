@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import ProfileMenu from "../components/UI/ProfileMenu";
 
 const navMotion = {
   visible: {
@@ -128,6 +129,8 @@ export default function Nav() {
         >
           Sign in
         </a>
+
+        <ProfileMenu toggled={toggled} />
       </motion.div>
 
       {/* Hamburger Toggle */}

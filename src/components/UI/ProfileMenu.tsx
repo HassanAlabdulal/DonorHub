@@ -12,8 +12,7 @@ interface ProfileMenuProps {
   toggled: boolean;
 }
 
-export const ProfileMenu: React.FC<ProfileMenuProps> = ({ toggled }) => {
-  // Use the `toggled` prop to conditionally render the menu
+const ProfileMenu: React.FC<ProfileMenuProps> = ({ toggled }) => {
   return (
     <div
       className={`lg:block ${toggled ? "block" : "hidden"} absolute right-0`}
@@ -132,3 +131,5 @@ export const ProfileMenu: React.FC<ProfileMenuProps> = ({ toggled }) => {
     </div>
   );
 };
+
+export default ProfileMenu;
