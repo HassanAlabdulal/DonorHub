@@ -23,7 +23,6 @@ export default function AddCollectionDrive() {
 
   const handleStartDateChange = (date: React.SetStateAction<string>) => {
     setStartDate(date);
-    // If a duration is already selected, calculate the end date again
     if (endDate) {
       const durationMonths = endDate === calculateEndDate(3) ? 3 : 6;
       setEndDate(calculateEndDate(durationMonths));
@@ -32,9 +31,7 @@ export default function AddCollectionDrive() {
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    // Submit form data to server or state management
-    console.log({ title, location, startDate, endDate });
-    // Additional submission logic goes here
+    console.log({ title, location, category, description, startDate, endDate });
   };
 
   return (
