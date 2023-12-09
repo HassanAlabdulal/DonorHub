@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import OperationsHistory from "./OperationsHistory";
+import OperationsHistory from "./UI/OperationsHistory";
 
 const sampleDataFromBackend = [
   { type: "Donate", toFrom: "Ali Alabdulal", date: "22/11/2023" },
