@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import OperationsHistory from "./UI/OperationsHistory";
 
 const sampleDataFromBackend = [
@@ -156,9 +156,6 @@ export default function ShowProfile() {
             </div>
 
             <div className="flex flex-col items-center mt-3">
-              {" "}
-              {/* Flex container with column direction */}
-              {/* Update Profile Button */}
               <a
                 className=" cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-9 py-2.5
                 text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
