@@ -1,8 +1,11 @@
+import { Textarea } from "@material-tailwind/react";
 import React, { useState } from "react";
 
 export default function AddCollectionDrive() {
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
+  const [category, setCategory] = useState("");
+  const [description, setDescription] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
@@ -45,49 +48,74 @@ export default function AddCollectionDrive() {
         {/* Form */}
         <form onSubmit={handleSubmit} className="w-full">
           <div className="mb-4">
-            <label htmlFor="title" className="text-gray-700">
+            <label htmlFor="title" className="mb-1 text-gray-700">
               Title:
             </label>
             <input
-              id="title"
+              name="title"
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-3 py-2 border rounded shadow-sm"
+              className="w-full px-3 py-2 border rounded shadow-sm focus:outline-[#292828] bg-gray-50/50"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="location" className="text-gray-700">
+            <label htmlFor="location" className="mb-1 text-gray-700">
               Location:
             </label>
             <input
-              id="location"
+              name="location"
               type="text"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              className="w-full px-3 py-2 border rounded shadow-sm"
+              className="w-full px-3 py-2 border rounded shadow-sm focus:outline-[#292828] bg-gray-50/50"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="Category" className="mb-1 text-gray-700">
+              Category:
+            </label>
+            <input
+              name="category"
+              type="text"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="w-full px-3 py-2 border rounded shadow-sm focus:outline-[#292828] bg-gray-50/50"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="description" className="mb-1 text-gray-700">
+              Description:
+            </label>
+            <textarea
+              name="description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              className="w-full px-3 py-2 border rounded shadow-sm focus:outline-[#292828] resize-none bg-gray-50/50"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="start-date" className="text-gray-700">
+            <label htmlFor="start-date" className="mb-1 text-gray-700">
               Start Date:
             </label>
             <input
-              id="start-date"
+              name="start-date"
               type="date"
               value={startDate}
               onChange={(e) => handleStartDateChange(e.target.value)}
-              className="w-full px-3 py-2 border rounded shadow-sm"
+              className="w-full px-3 py-2 border rounded shadow-sm focus:outline-[#292828] bg-gray-50/50"
               required
             />
           </div>
 
           <fieldset className="mb-4">
-            <legend className="text-gray-700">Duration:</legend>
+            <legend className="mb-1 text-gray-700">Duration:</legend>
             <div className="flex flex-col gap-4 md:flex-row">
               <div className="flex items-center">
                 <input
@@ -95,7 +123,7 @@ export default function AddCollectionDrive() {
                   name="duration"
                   value="3 months"
                   id="duration-3months"
-                  className="w-4 h-4 form-radio"
+                  className="w-4 h-4 form-radio focus:outline-[#292828] bg-gray-50/50"
                   onChange={() => handleDurationChange(3)}
                 />
                 <label htmlFor="duration-3months" className="ml-2">
@@ -120,14 +148,14 @@ export default function AddCollectionDrive() {
           </fieldset>
 
           <div className="mb-4">
-            <label htmlFor="end-date" className="text-gray-700">
+            <label htmlFor="end-date" className="mb-1 text-gray-700">
               End Date:
             </label>
             <input
-              id="end-date"
+              name="end-date"
               type="date"
               value={endDate}
-              className="w-full px-3 py-2 border rounded shadow-sm"
+              className="w-full px-3 py-2 border rounded shadow-sm bg-gray-50/50"
               disabled
             />
           </div>
