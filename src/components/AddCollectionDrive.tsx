@@ -132,12 +132,16 @@ export default function AddCollectionDrive() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
-          >
-            Submit
-          </button>
+          <div className="flex items-center justify-center mt-8">
+            <button
+              type="submit"
+              className=" cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-9 py-2.5
+            text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+              disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
