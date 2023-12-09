@@ -35,8 +35,8 @@ export default function AddCollectionDrive() {
   };
 
   return (
-    <div className="bg-[#f7f7f7] pt-16 flex flex-col items-center min-h-screen font-roboto">
-      <div className="flex flex-col items-center w-full max-w-4xl p-8 space-y-8 overflow-hidden bg-white rounded-lg shadow-lg">
+    <div className="bg-[#f7f7f7] pt-16 flex flex-col justify-center w-full items-center min-h-screen font-roboto">
+      <div className="flex flex-col items-center w-2/3 max-w-4xl p-8 space-y-8 overflow-hidden bg-white rounded-lg shadow-lg">
         {/* Title */}
         <h1 className="text-2xl font-semibold text-gray-900">
           New Collection Drive
