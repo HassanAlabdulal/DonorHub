@@ -30,6 +30,7 @@ const navLinks = [
   { name: "Reports", href: "ReportsPage", id: 2 },
   { name: "Collection Drive", href: "AddCollectionDrivePage", id: 3 },
   { name: "Donation Request", href: "ProcessRequestPage", id: 4 },
+  { name: "Operations", href: "OperationsHistoryPage", id: 4 },
 ];
 
 const NavLinks = ({
