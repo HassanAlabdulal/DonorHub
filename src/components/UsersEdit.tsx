@@ -144,7 +144,7 @@ export default function UsersEdit() {
              text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
                disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           >
-            Create a new user profile
+            Create New Profile
           </button>
         </div>
       </div>
