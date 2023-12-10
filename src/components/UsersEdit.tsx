@@ -50,13 +50,6 @@ export default function UsersEdit() {
           Users
         </h1>
 
-        {/* Create New User Button */}
-        <div className="self-end mb-4">
-          <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
-            Create a new user profile
-          </button>
-        </div>
-
         {/* Search Bar */}
         <div className="flex justify-center w-full mb-4">
           <div className="relative">
@@ -64,7 +57,7 @@ export default function UsersEdit() {
               type="text"
               name="name"
               id="name"
-              className="shadow-sm focus:ring-[#3e60a3] focus:border-[#3e60a3] block w-60 sm:w-80 md:w-96 h-12 text-base border-gray-300 pl-4 pr-10 rounded-lg"
+              className="shadow-sm focus:ring-[#292828] focus:outline-[#292828] block w-60 sm:w-80 md:w-96 h-12 text-base border-gray-300 pl-4 pr-10 rounded-lg"
               placeholder="Search by ID or Name"
               style={{ backgroundColor: "#ececec" }} // Here we change the background color
               onChange={handleSearchChange}
@@ -114,7 +107,7 @@ export default function UsersEdit() {
                       {/* History Anchor */}
                       <a
                         href="OperationsHistoryAdminPage"
-                        className="inline-flex items-center px-4 py-2 font-bold text-white bg-black rounded hover:bg-blue-700"
+                        className="inline-flex items-center px-4 py-2 font-bold text-white bg-[#292828] rounded hover:bg-black transition-all duration-700"
                       >
                         <FontAwesomeIcon icon={faHistory} className="mr-2" />
                         History
@@ -123,7 +116,7 @@ export default function UsersEdit() {
                       {/* Edit Anchor */}
                       <a
                         href="EditProfileAdminPage"
-                        className="inline-flex items-center px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
+                        className="inline-flex items-center px-4 py-2 font-bold text-white transition-all duration-700 bg-[#5f7fbf] rounded hover:bg-[#3e60a3]"
                       >
                         <FontAwesomeIcon icon={faEdit} className="mr-2" />
                         Edit
@@ -131,7 +124,7 @@ export default function UsersEdit() {
 
                       {/* Remove Button */}
                       <button
-                        className="px-4 py-2 font-bold text-white bg-red-500 rounded hover:bg-red-700"
+                        className="px-5 py-2 font-bold text-white transition-all duration-700 bg-red-700 rounded hover:bg-red-800"
                         onClick={() => handleRemoveUser(user.id)}
                       >
                         <FontAwesomeIcon icon={faTrash} />
@@ -142,6 +135,17 @@ export default function UsersEdit() {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* Create New User Button */}
+        <div className="mt-8 ">
+          <button
+            className="select-none  cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-3 py-2.5
+             text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+               disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          >
+            Create a new user profile
+          </button>
         </div>
       </div>
     </div>
