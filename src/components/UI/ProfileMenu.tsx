@@ -16,7 +16,9 @@ interface ProfileMenuProps {
 const ProfileMenu: React.FC<ProfileMenuProps> = ({ toggled }) => {
   return (
     <div
-      className={`lg:block ${toggled ? "block" : "hidden"} absolute right-0`}
+      className={`lg:block ${
+        toggled ? "block" : "hidden"
+      } absolute right-0 mr-3`}
     >
       <Menu>
         <MenuHandler>
