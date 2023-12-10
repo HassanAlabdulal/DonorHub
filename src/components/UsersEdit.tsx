@@ -139,13 +139,14 @@ export default function UsersEdit() {
 
         {/* Create New User Button */}
         <div className="mt-8 ">
-          <button
+          <a
+            href="SignUpPage"
             className="select-none  cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-3 py-2.5
              text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
                disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           >
             Create New Profile
-          </button>
+          </a>
         </div>
       </div>
     </div>
