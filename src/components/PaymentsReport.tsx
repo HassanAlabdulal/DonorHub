@@ -10,39 +10,29 @@ export default function PaymentsReport() {
       </div>
       <div className="w-2/3">
         <TableWithStripedRows
-          headers={[
-            "Payment ID",
-            "Recipient Name",
-            "Amount (USD)",
-            "Confirmation Date",
-          ]}
+          headers={["Recipient Name", "Amount (USD)", "Confirmation Date"]}
           rows={[
             {
-              PaymentID: "PY001",
               PayerName: "John Doe",
               Amount: "150.00",
               ConfirmationDate: "2023-01-12",
             },
             {
-              PaymentID: "PY002",
               PayerName: "Jane Smith",
               Amount: "200.00",
               ConfirmationDate: "2023-01-15",
             },
             {
-              PaymentID: "PY003",
               PayerName: "Bob Johnson",
               Amount: "350.00",
               ConfirmationDate: "2023-02-01",
             },
             {
-              PaymentID: "PY004",
               PayerName: "Alice Brown",
               Amount: "125.00",
               ConfirmationDate: "2023-02-05",
             },
             {
-              PaymentID: "PY005",
               PayerName: "Charlie Davis",
               Amount: "500.00",
               ConfirmationDate: "2023-02-20",
