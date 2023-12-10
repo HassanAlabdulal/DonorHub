@@ -113,7 +113,7 @@ export default function UsersEdit() {
                     <div className="flex justify-center space-x-2">
                       {/* History Anchor */}
                       <a
-                        href="OperationsHistoryPage"
+                        href="OperationsHistoryAdminPage"
                         className="inline-flex items-center px-4 py-2 font-bold text-white bg-black rounded hover:bg-blue-700"
                       >
                         <FontAwesomeIcon icon={faHistory} className="mr-2" />
