@@ -273,7 +273,7 @@ const SignUp = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#5f7fbf]"
-                    placeholder="inspirehub@example.com"
+                    placeholder="donorhub@example.com"
                   />
                 </div>
                 <label className="px-1 mb-2 text-xs font-semibold">

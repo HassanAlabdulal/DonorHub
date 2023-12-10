@@ -28,7 +28,7 @@ export default function ForgotPassword() {
                     <input
                       type="email"
                       className="w-full py-2 pl-10 pr-3 -ml-10 border-2 border-gray-200 rounded-lg outline-none focus:border-[#292828]"
-                      placeholder="inspirehub@example.com"
+                      placeholder="donorhub@example.com"
                     />
                   </div>
                 </div>
