@@ -251,13 +251,15 @@ export default function EditProfileUser() {
             </div>
 
             {/* Button Container */}
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex items-center justify-center gap-3">
               {" "}
               {/* Flex container with column direction */}
               {/* Change Password Button */}
               <a
                 type="button"
-                className="bg-[#5f7fbf] text-white font-bold py-2 px-4 rounded cursor-pointer hover:bg-[#3e60a3] transition-all duration-700 min-w-[120px]"
+                className=" cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-3 py-2
+                text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+                  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 href="NewPasswordPage"
               >
                 Change Password
@@ -265,7 +267,9 @@ export default function EditProfileUser() {
               {/* Update Profile Button */}
               <a
                 type="submit"
-                className="bg-[#5f7fbf] text-white font-bold py-2 px-4 rounded cursor-pointer hover:bg-[#3e60a3] transition-all duration-700 min-w-[170px] text-center"
+                className="cursor-pointer rounded-lg bg-[#292828] border-2 border-[#292828] px-7 py-2
+                text-base font-bold text-white align-middle transition-all duration-700 hover:bg-black focus:outline-none shadow-md hover:shadow-xl
+                  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 href="ShowProfilePage"
               >
                 Save Changes
