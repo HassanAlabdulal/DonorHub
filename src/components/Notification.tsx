@@ -21,33 +21,33 @@ const NotificationItem: React.FC<NotificationItemProps> = ({
   onAccept,
   onPay,
 }) => {
-  "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-300";
-  const payButtonClass =
-    "px-7 py-2 bg-black text-white rounded hover:bg-gray-700 transition-colors duration-300";
-
+  // Use a base class for buttons to standardize their size
+  const buttonBaseClass =
+    "inline-flex items-center justify-center font-bold rounded text-white transition-colors duration-500";
+  const buttonFixedSizeClass = "w-28 h-10"; // Adjust the width (w-28) and height (h-10) as needed to fit your design
+  const acceptButtonClass = `${buttonBaseClass} ${buttonFixedSizeClass} bg-[#5f7fbf] hover:bg-[#3e60a3]`;
+  const payButtonClass = `${buttonBaseClass} ${buttonFixedSizeClass} bg-[#292828] hover:bg-black`;
   return (
     <tr className="border-b">
       <td className="px-5 py-3 text-center">{notification.type}</td>
       <td className="px-5 py-3 text-center">{notification.from}</td>
       <td className="px-5 py-3 text-center">{notification.date}</td>
       <td className="px-5 py-3">
-        <div
-          className="flex items-center justify-center"
-          style={{ height: "50px" }}
-        >
+        <div className="flex items-center justify-center">
           {notification.isCompleted ? (
-            <FontAwesomeIcon icon={faCheck} className="text-green-500 m-11" />
+            <FontAwesomeIcon icon={faCheck} className="text-green-500" />
           ) : notification.type === "Request for Donate" ? (
-            <button
+            <a
               className={payButtonClass}
               onClick={() => onPay(notification)}
+              href="PaymentPage"
             >
               <FontAwesomeIcon icon={faDollarSign} className="mr-2" />
               Pay
-            </button>
+            </a>
           ) : (
             <button
-              className={payButtonClass}
+              className={acceptButtonClass}
               onClick={() => onAccept(notification)}
             >
               <FontAwesomeIcon icon={faCheck} className="mr-2" />
@@ -59,7 +59,6 @@ const NotificationItem: React.FC<NotificationItemProps> = ({
     </tr>
   );
 };
-
 export default function Notification() {
   const [notifications, setNotifications] = useState<NotificationType[]>([
     {
@@ -95,7 +94,7 @@ export default function Notification() {
   };
 
   return (
-    <div className="bg-[#f7f7f7] pt-16 flex flex-col items-center min-h-screen font-roboto">
+    <div className="bg-[#f7f7f7] pt-16 flex flex-col items-center justify-center min-h-screen font-roboto">
       <div className="flex flex-col items-center w-full max-w-4xl p-8 space-y-8 overflow-hidden bg-white rounded-lg shadow-lg">
         <h1 className="text-2xl font-semibold text-center text-gray-900">
           Notification Center
